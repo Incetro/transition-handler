@@ -12,13 +12,18 @@ import UIKit
 
 public final class ViperTransitionPromise<T>: TransitionPromise<T> {
 
+    // MARK: - Properties
+
     /// NavigationController for destnation which is used
     /// when you need to set a different controller
     private var navigationController: UINavigationController?
 
+    /// True if need to animate transition
     var isAnimated: Bool {
         animated
     }
+
+    // MARK: - Useful
 
     // swiftlint:disable cyclomatic_complexity
 

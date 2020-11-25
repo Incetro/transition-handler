@@ -10,5 +10,6 @@ import Foundation
 
 // MARK: - ModuleOutput
 
+/// Output `layer` for communication between modules and most often it is a presenter
 public protocol ModuleOutput: class {
 }

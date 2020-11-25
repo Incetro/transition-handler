@@ -14,9 +14,18 @@ public typealias TransitionBlock = (_ source: UIViewController, _ destination: U
 
 public final class CustomTransitionPromise<T> {
 
+    // MARK: Properties
+
+    /// Source controller which trigger the transition
     private unowned var source: UIViewController
+
+    /// The controller that is the target of the transition
     private var destination: UIViewController
+
+    /// Module type that is the target of the transition
     private var type: T.Type
+
+    // MARK: - Initializers
 
     /// Initilization with source and destination
     ///
@@ -29,6 +38,8 @@ public final class CustomTransitionPromise<T> {
         self.destination = destination
         self.type = type
     }
+
+    // MARK: - Useful
 
     /// Gives you basic template to create custom transition
     /// - Parameter block: closure that contains setup for transition

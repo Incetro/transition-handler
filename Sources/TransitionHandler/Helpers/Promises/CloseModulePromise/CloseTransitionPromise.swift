@@ -8,30 +8,47 @@
 
 import UIKit
 
-public typealias PromiseActionBlock = (() throws -> Void)
-
 // MARK: - CloseTransitionPromise
 
 public final class CloseTransitionPromise {
 
+    // MARK: - Properties
+
+    /// True if need to animate transition
     var isAnimated: Bool {
         animated
     }
 
+    /// Source controller which trigger the transition
     private unowned var source: UIViewController
+
+    /// Controller to use as `destination` if `conditionPop`returns true
     private var foundViewController: UIViewController?
 
+    /// True if need to animate presentation of controller
     private var animated = true
-    private var promise: PromiseActionBlock?
 
+    /// Promise that contains closure with setups
+    private var promise: PromiseAction?
+
+    // MARK: - Initializers
+
+    // Initilization with source and destination
+    ///
+    /// - Parameters:
+    ///   - source: Source UIViewController
     init(source: UIViewController) {
         self.source = source
     }
 
-    public func promise(_ promise: @escaping PromiseActionBlock) {
+    // MARK: - Useful
+
+    // Set promise for current transition
+    public func promise(_ promise: @escaping PromiseAction) {
         self.promise = promise
     }
 
+    // Set animate property for current transition
     public func animate(_ animate: Bool) -> CloseTransitionPromise {
         animated = animate
         return self
