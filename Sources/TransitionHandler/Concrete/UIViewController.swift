@@ -12,7 +12,7 @@ import UIKit
 
 extension UIViewController: TransitionHandler {
 
-    var moduleInput: ModuleInput? {
+    public var moduleInput: ModuleInput? {
         if let provider = self as? ViewOutputProvider {
             if let result = provider.viewOutput {
                 return result
@@ -24,7 +24,7 @@ extension UIViewController: TransitionHandler {
         }
     }
 
-    func openModule<M>(
+    public func openModule<M>(
         _ moduleType: M.Type
     ) -> ViperTransitionPromise<M.Input> where M: Module, M.View: UIViewController {
         let destination = M.instantiate()
@@ -35,7 +35,7 @@ extension UIViewController: TransitionHandler {
         return promise
     }
 
-    func openModule<M>(
+    public func openModule<M>(
         _ moduleType: M.Type,
         withData data: M.Data
     ) -> ViperTransitionPromise<M.Input> where M: AdvancedModule, M.View: UIViewController {
@@ -47,7 +47,7 @@ extension UIViewController: TransitionHandler {
         return promise
     }
 
-    func closeCurrentModule() -> CloseTransitionPromise {
+    public func closeCurrentModule() -> CloseTransitionPromise {
         let close = CloseTransitionPromise(source: self)
         close.promise { [unowned self] in
             if let parent = self.parent {

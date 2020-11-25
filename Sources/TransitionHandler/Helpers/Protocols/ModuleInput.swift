@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - ModuleInput
 
-protocol ModuleInput: class {
+public protocol ModuleInput: class {
 
     /// Set module output for the current module
     ///
@@ -20,6 +20,6 @@ protocol ModuleInput: class {
 
 extension ModuleInput {
 
-    func setModuleOutput(_ moduleOutput: ModuleOutput) {
+    public func setModuleOutput(_ moduleOutput: ModuleOutput) {
     }
 }

@@ -28,37 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB30D707256ADB6100EE2C61"
-               BuildableName = "TransitionHandler.framework"
-               BlueprintName = "TransitionHandler macOS"
-               ReferencedContainer = "container:TransitionHandler.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "CB30D6F7256ADB5000EE2C61"
                BuildableName = "TransitionHandler.framework"
                BlueprintName = "TransitionHandler tvOS"
-               ReferencedContainer = "container:TransitionHandler.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB30D6E8256ADB3C00EE2C61"
-               BuildableName = "TransitionHandler.framework"
-               BlueprintName = "TransitionHandler watchOS"
                ReferencedContainer = "container:TransitionHandler.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

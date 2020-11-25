@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - ViewOutputProvider
 
-protocol ViewOutputProvider {
+public protocol ViewOutputProvider {
 
     /// Module input for the current object
     var viewOutput: ModuleInput? { get }

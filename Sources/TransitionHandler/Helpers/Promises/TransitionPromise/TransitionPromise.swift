@@ -8,11 +8,11 @@
 
 import UIKit
 
-typealias PromiseAction = () throws -> Void
+public typealias PromiseAction = () throws -> Void
 
 // MARK: - TransitionPromise
 
-class TransitionPromise<T> {
+public class TransitionPromise<T> {
 
     // MARK: Properties
 
@@ -45,7 +45,7 @@ class TransitionPromise<T> {
     /// transmitted via special `openModule( :with data)` method
     ///
     /// - Parameter block: destination ModuleInput config block
-    func then(_ block: @escaping TransitionConfigureBlock<T>) {
+    public func then(_ block: @escaping TransitionConfigureBlock<T>) {
 
         var moduleInput: ModuleInput?
 
@@ -70,7 +70,7 @@ class TransitionPromise<T> {
     ///
     /// - Parameter animate: animate property
     /// - Returns: Current promise
-    func animate(_ animate: Bool) -> Self {
+    public func animate(_ animate: Bool) -> Self {
         self.animated = animate
         return self
     }
@@ -79,14 +79,14 @@ class TransitionPromise<T> {
     ///
     /// - Parameter block: setup block
     /// - Returns: Current promise
-    func destination(_ block: (UIViewController) -> Void) -> Self {
+    public func destination(_ block: (UIViewController) -> Void) -> Self {
         let destination = self.destination.unwrap(TransitionHandlerError.nilController("Destination"))
         block(destination)
         return self
     }
 
     /// Make transition
-    func perform() {
+    public func perform() {
         do {
             try promise?()
         } catch {
@@ -97,7 +97,7 @@ class TransitionPromise<T> {
     /// Replace promise
     ///
     /// - Parameter completion: Current promise
-    func promise( _ promise: @escaping PromiseAction) {
+    public func promise( _ promise: @escaping PromiseAction) {
         self.promise = promise
     }
 }
