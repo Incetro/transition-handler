@@ -17,6 +17,66 @@
 		CB30D71E256ADE2E00EE2C61 /* TransitionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = CB30D71B256ADE2E00EE2C61 /* TransitionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB30D71F256ADE2E00EE2C61 /* TransitionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = CB30D71B256ADE2E00EE2C61 /* TransitionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB30D720256ADE2E00EE2C61 /* TransitionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = CB30D71B256ADE2E00EE2C61 /* TransitionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBCF4B4F256E93DC000FECE6 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B38256E93DC000FECE6 /* UIViewController.swift */; };
+		CBCF4B50256E93DC000FECE6 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B38256E93DC000FECE6 /* UIViewController.swift */; };
+		CBCF4B51256E93DC000FECE6 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B38256E93DC000FECE6 /* UIViewController.swift */; };
+		CBCF4B52256E93DC000FECE6 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B38256E93DC000FECE6 /* UIViewController.swift */; };
+		CBCF4B53256E93DC000FECE6 /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B3A256E93DC000FECE6 /* TransitionHandler.swift */; };
+		CBCF4B54256E93DC000FECE6 /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B3A256E93DC000FECE6 /* TransitionHandler.swift */; };
+		CBCF4B55256E93DC000FECE6 /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B3A256E93DC000FECE6 /* TransitionHandler.swift */; };
+		CBCF4B56256E93DC000FECE6 /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B3A256E93DC000FECE6 /* TransitionHandler.swift */; };
+		CBCF4B57256E93DC000FECE6 /* CustomTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B3E256E93DC000FECE6 /* CustomTransitionPromise.swift */; };
+		CBCF4B58256E93DC000FECE6 /* CustomTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B3E256E93DC000FECE6 /* CustomTransitionPromise.swift */; };
+		CBCF4B59256E93DC000FECE6 /* CustomTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B3E256E93DC000FECE6 /* CustomTransitionPromise.swift */; };
+		CBCF4B5A256E93DC000FECE6 /* CustomTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B3E256E93DC000FECE6 /* CustomTransitionPromise.swift */; };
+		CBCF4B5B256E93DC000FECE6 /* TransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B40256E93DC000FECE6 /* TransitionPromise.swift */; };
+		CBCF4B5C256E93DC000FECE6 /* TransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B40256E93DC000FECE6 /* TransitionPromise.swift */; };
+		CBCF4B5D256E93DC000FECE6 /* TransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B40256E93DC000FECE6 /* TransitionPromise.swift */; };
+		CBCF4B5E256E93DC000FECE6 /* TransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B40256E93DC000FECE6 /* TransitionPromise.swift */; };
+		CBCF4B5F256E93DC000FECE6 /* CloseTransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B42256E93DC000FECE6 /* CloseTransitionStyle.swift */; };
+		CBCF4B60256E93DC000FECE6 /* CloseTransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B42256E93DC000FECE6 /* CloseTransitionStyle.swift */; };
+		CBCF4B61256E93DC000FECE6 /* CloseTransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B42256E93DC000FECE6 /* CloseTransitionStyle.swift */; };
+		CBCF4B62256E93DC000FECE6 /* CloseTransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B42256E93DC000FECE6 /* CloseTransitionStyle.swift */; };
+		CBCF4B63256E93DC000FECE6 /* CloseTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B43256E93DC000FECE6 /* CloseTransitionPromise.swift */; };
+		CBCF4B64256E93DC000FECE6 /* CloseTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B43256E93DC000FECE6 /* CloseTransitionPromise.swift */; };
+		CBCF4B65256E93DC000FECE6 /* CloseTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B43256E93DC000FECE6 /* CloseTransitionPromise.swift */; };
+		CBCF4B66256E93DC000FECE6 /* CloseTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B43256E93DC000FECE6 /* CloseTransitionPromise.swift */; };
+		CBCF4B67256E93DC000FECE6 /* TransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B45256E93DC000FECE6 /* TransitionStyle.swift */; };
+		CBCF4B68256E93DC000FECE6 /* TransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B45256E93DC000FECE6 /* TransitionStyle.swift */; };
+		CBCF4B69256E93DC000FECE6 /* TransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B45256E93DC000FECE6 /* TransitionStyle.swift */; };
+		CBCF4B6A256E93DC000FECE6 /* TransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B45256E93DC000FECE6 /* TransitionStyle.swift */; };
+		CBCF4B6B256E93DC000FECE6 /* ViperTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B46256E93DC000FECE6 /* ViperTransitionPromise.swift */; };
+		CBCF4B6C256E93DC000FECE6 /* ViperTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B46256E93DC000FECE6 /* ViperTransitionPromise.swift */; };
+		CBCF4B6D256E93DC000FECE6 /* ViperTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B46256E93DC000FECE6 /* ViperTransitionPromise.swift */; };
+		CBCF4B6E256E93DC000FECE6 /* ViperTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B46256E93DC000FECE6 /* ViperTransitionPromise.swift */; };
+		CBCF4B6F256E93DC000FECE6 /* TransitionNavigationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B47256E93DC000FECE6 /* TransitionNavigationStyle.swift */; };
+		CBCF4B70256E93DC000FECE6 /* TransitionNavigationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B47256E93DC000FECE6 /* TransitionNavigationStyle.swift */; };
+		CBCF4B71256E93DC000FECE6 /* TransitionNavigationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B47256E93DC000FECE6 /* TransitionNavigationStyle.swift */; };
+		CBCF4B72256E93DC000FECE6 /* TransitionNavigationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B47256E93DC000FECE6 /* TransitionNavigationStyle.swift */; };
+		CBCF4B73256E93DC000FECE6 /* TransitionHandlerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B49256E93DC000FECE6 /* TransitionHandlerError.swift */; };
+		CBCF4B74256E93DC000FECE6 /* TransitionHandlerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B49256E93DC000FECE6 /* TransitionHandlerError.swift */; };
+		CBCF4B75256E93DC000FECE6 /* TransitionHandlerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B49256E93DC000FECE6 /* TransitionHandlerError.swift */; };
+		CBCF4B76256E93DC000FECE6 /* TransitionHandlerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B49256E93DC000FECE6 /* TransitionHandlerError.swift */; };
+		CBCF4B77256E93DC000FECE6 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4B256E93DC000FECE6 /* ModuleInput.swift */; };
+		CBCF4B78256E93DC000FECE6 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4B256E93DC000FECE6 /* ModuleInput.swift */; };
+		CBCF4B79256E93DC000FECE6 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4B256E93DC000FECE6 /* ModuleInput.swift */; };
+		CBCF4B7A256E93DC000FECE6 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4B256E93DC000FECE6 /* ModuleInput.swift */; };
+		CBCF4B7B256E93DC000FECE6 /* ModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4C256E93DC000FECE6 /* ModuleOutput.swift */; };
+		CBCF4B7C256E93DC000FECE6 /* ModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4C256E93DC000FECE6 /* ModuleOutput.swift */; };
+		CBCF4B7D256E93DC000FECE6 /* ModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4C256E93DC000FECE6 /* ModuleOutput.swift */; };
+		CBCF4B7E256E93DC000FECE6 /* ModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4C256E93DC000FECE6 /* ModuleOutput.swift */; };
+		CBCF4B7F256E93DC000FECE6 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4D256E93DC000FECE6 /* Module.swift */; };
+		CBCF4B80256E93DC000FECE6 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4D256E93DC000FECE6 /* Module.swift */; };
+		CBCF4B81256E93DC000FECE6 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4D256E93DC000FECE6 /* Module.swift */; };
+		CBCF4B82256E93DC000FECE6 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4D256E93DC000FECE6 /* Module.swift */; };
+		CBCF4B83256E93DC000FECE6 /* ViewOutputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4E256E93DC000FECE6 /* ViewOutputProvider.swift */; };
+		CBCF4B84256E93DC000FECE6 /* ViewOutputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4E256E93DC000FECE6 /* ViewOutputProvider.swift */; };
+		CBCF4B85256E93DC000FECE6 /* ViewOutputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4E256E93DC000FECE6 /* ViewOutputProvider.swift */; };
+		CBCF4B86256E93DC000FECE6 /* ViewOutputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4E256E93DC000FECE6 /* ViewOutputProvider.swift */; };
+		CBCF4B9E256E949D000FECE6 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B9D256E949D000FECE6 /* Optional.swift */; };
+		CBCF4B9F256E949D000FECE6 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B9D256E949D000FECE6 /* Optional.swift */; };
+		CBCF4BA0256E949D000FECE6 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B9D256E949D000FECE6 /* Optional.swift */; };
+		CBCF4BA1256E949D000FECE6 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B9D256E949D000FECE6 /* Optional.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +116,21 @@
 		CB30D708256ADB6100EE2C61 /* TransitionHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TransitionHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB30D71B256ADE2E00EE2C61 /* TransitionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionHandler.h; sourceTree = "<group>"; };
 		CB30D71C256ADE2E00EE2C61 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBCF4B38256E93DC000FECE6 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		CBCF4B3A256E93DC000FECE6 /* TransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionHandler.swift; sourceTree = "<group>"; };
+		CBCF4B3E256E93DC000FECE6 /* CustomTransitionPromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitionPromise.swift; sourceTree = "<group>"; };
+		CBCF4B40256E93DC000FECE6 /* TransitionPromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPromise.swift; sourceTree = "<group>"; };
+		CBCF4B42256E93DC000FECE6 /* CloseTransitionStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseTransitionStyle.swift; sourceTree = "<group>"; };
+		CBCF4B43256E93DC000FECE6 /* CloseTransitionPromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseTransitionPromise.swift; sourceTree = "<group>"; };
+		CBCF4B45256E93DC000FECE6 /* TransitionStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionStyle.swift; sourceTree = "<group>"; };
+		CBCF4B46256E93DC000FECE6 /* ViperTransitionPromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperTransitionPromise.swift; sourceTree = "<group>"; };
+		CBCF4B47256E93DC000FECE6 /* TransitionNavigationStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionNavigationStyle.swift; sourceTree = "<group>"; };
+		CBCF4B49256E93DC000FECE6 /* TransitionHandlerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionHandlerError.swift; sourceTree = "<group>"; };
+		CBCF4B4B256E93DC000FECE6 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
+		CBCF4B4C256E93DC000FECE6 /* ModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleOutput.swift; sourceTree = "<group>"; };
+		CBCF4B4D256E93DC000FECE6 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		CBCF4B4E256E93DC000FECE6 /* ViewOutputProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewOutputProvider.swift; sourceTree = "<group>"; };
+		CBCF4B9D256E949D000FECE6 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +241,9 @@
 		CB30D719256ADE2E00EE2C61 /* TransitionHandler */ = {
 			isa = PBXGroup;
 			children = (
+				CBCF4B37256E93DC000FECE6 /* Concrete */,
+				CBCF4B39256E93DC000FECE6 /* Protocols */,
+				CBCF4B3B256E93DC000FECE6 /* Helpers */,
 				CB30D71A256ADE2E00EE2C61 /* Supporting Files */,
 			);
 			path = TransitionHandler;
@@ -178,6 +256,106 @@
 				CB30D71C256ADE2E00EE2C61 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBCF4B37256E93DC000FECE6 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF4B38256E93DC000FECE6 /* UIViewController.swift */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
+		CBCF4B39256E93DC000FECE6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF4B3A256E93DC000FECE6 /* TransitionHandler.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CBCF4B3B256E93DC000FECE6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF4B3C256E93DC000FECE6 /* Promises */,
+				CBCF4B48256E93DC000FECE6 /* Common */,
+				CBCF4B4A256E93DC000FECE6 /* Protocols */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CBCF4B3C256E93DC000FECE6 /* Promises */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF4B3D256E93DC000FECE6 /* CustomTransitionNode */,
+				CBCF4B3F256E93DC000FECE6 /* TransitionPromise */,
+				CBCF4B41256E93DC000FECE6 /* CloseModulePromise */,
+				CBCF4B44256E93DC000FECE6 /* ViperTransitionPromise */,
+				CBCF4B47256E93DC000FECE6 /* TransitionNavigationStyle.swift */,
+			);
+			path = Promises;
+			sourceTree = "<group>";
+		};
+		CBCF4B3D256E93DC000FECE6 /* CustomTransitionNode */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF4B3E256E93DC000FECE6 /* CustomTransitionPromise.swift */,
+			);
+			path = CustomTransitionNode;
+			sourceTree = "<group>";
+		};
+		CBCF4B3F256E93DC000FECE6 /* TransitionPromise */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF4B40256E93DC000FECE6 /* TransitionPromise.swift */,
+			);
+			path = TransitionPromise;
+			sourceTree = "<group>";
+		};
+		CBCF4B41256E93DC000FECE6 /* CloseModulePromise */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF4B42256E93DC000FECE6 /* CloseTransitionStyle.swift */,
+				CBCF4B43256E93DC000FECE6 /* CloseTransitionPromise.swift */,
+			);
+			path = CloseModulePromise;
+			sourceTree = "<group>";
+		};
+		CBCF4B44256E93DC000FECE6 /* ViperTransitionPromise */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF4B45256E93DC000FECE6 /* TransitionStyle.swift */,
+				CBCF4B46256E93DC000FECE6 /* ViperTransitionPromise.swift */,
+			);
+			path = ViperTransitionPromise;
+			sourceTree = "<group>";
+		};
+		CBCF4B48256E93DC000FECE6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF4B9C256E9443000FECE6 /* Extensions */,
+				CBCF4B49256E93DC000FECE6 /* TransitionHandlerError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CBCF4B4A256E93DC000FECE6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF4B4B256E93DC000FECE6 /* ModuleInput.swift */,
+				CBCF4B4C256E93DC000FECE6 /* ModuleOutput.swift */,
+				CBCF4B4D256E93DC000FECE6 /* Module.swift */,
+				CBCF4B4E256E93DC000FECE6 /* ViewOutputProvider.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CBCF4B9C256E9443000FECE6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF4B9D256E949D000FECE6 /* Optional.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,6 +666,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCF4B7B256E93DC000FECE6 /* ModuleOutput.swift in Sources */,
+				CBCF4B5F256E93DC000FECE6 /* CloseTransitionStyle.swift in Sources */,
+				CBCF4B63256E93DC000FECE6 /* CloseTransitionPromise.swift in Sources */,
+				CBCF4B5B256E93DC000FECE6 /* TransitionPromise.swift in Sources */,
+				CBCF4B7F256E93DC000FECE6 /* Module.swift in Sources */,
+				CBCF4B4F256E93DC000FECE6 /* UIViewController.swift in Sources */,
+				CBCF4B83256E93DC000FECE6 /* ViewOutputProvider.swift in Sources */,
+				CBCF4B67256E93DC000FECE6 /* TransitionStyle.swift in Sources */,
+				CBCF4B53256E93DC000FECE6 /* TransitionHandler.swift in Sources */,
+				CBCF4B73256E93DC000FECE6 /* TransitionHandlerError.swift in Sources */,
+				CBCF4B57256E93DC000FECE6 /* CustomTransitionPromise.swift in Sources */,
+				CBCF4B9E256E949D000FECE6 /* Optional.swift in Sources */,
+				CBCF4B6B256E93DC000FECE6 /* ViperTransitionPromise.swift in Sources */,
+				CBCF4B77256E93DC000FECE6 /* ModuleInput.swift in Sources */,
+				CBCF4B6F256E93DC000FECE6 /* TransitionNavigationStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +688,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCF4B7C256E93DC000FECE6 /* ModuleOutput.swift in Sources */,
+				CBCF4B60256E93DC000FECE6 /* CloseTransitionStyle.swift in Sources */,
+				CBCF4B64256E93DC000FECE6 /* CloseTransitionPromise.swift in Sources */,
+				CBCF4B5C256E93DC000FECE6 /* TransitionPromise.swift in Sources */,
+				CBCF4B80256E93DC000FECE6 /* Module.swift in Sources */,
+				CBCF4B50256E93DC000FECE6 /* UIViewController.swift in Sources */,
+				CBCF4B84256E93DC000FECE6 /* ViewOutputProvider.swift in Sources */,
+				CBCF4B68256E93DC000FECE6 /* TransitionStyle.swift in Sources */,
+				CBCF4B54256E93DC000FECE6 /* TransitionHandler.swift in Sources */,
+				CBCF4B74256E93DC000FECE6 /* TransitionHandlerError.swift in Sources */,
+				CBCF4B58256E93DC000FECE6 /* CustomTransitionPromise.swift in Sources */,
+				CBCF4B9F256E949D000FECE6 /* Optional.swift in Sources */,
+				CBCF4B6C256E93DC000FECE6 /* ViperTransitionPromise.swift in Sources */,
+				CBCF4B78256E93DC000FECE6 /* ModuleInput.swift in Sources */,
+				CBCF4B70256E93DC000FECE6 /* TransitionNavigationStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +710,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCF4B7D256E93DC000FECE6 /* ModuleOutput.swift in Sources */,
+				CBCF4B61256E93DC000FECE6 /* CloseTransitionStyle.swift in Sources */,
+				CBCF4B65256E93DC000FECE6 /* CloseTransitionPromise.swift in Sources */,
+				CBCF4B5D256E93DC000FECE6 /* TransitionPromise.swift in Sources */,
+				CBCF4B81256E93DC000FECE6 /* Module.swift in Sources */,
+				CBCF4B51256E93DC000FECE6 /* UIViewController.swift in Sources */,
+				CBCF4B85256E93DC000FECE6 /* ViewOutputProvider.swift in Sources */,
+				CBCF4B69256E93DC000FECE6 /* TransitionStyle.swift in Sources */,
+				CBCF4B55256E93DC000FECE6 /* TransitionHandler.swift in Sources */,
+				CBCF4B75256E93DC000FECE6 /* TransitionHandlerError.swift in Sources */,
+				CBCF4B59256E93DC000FECE6 /* CustomTransitionPromise.swift in Sources */,
+				CBCF4BA0256E949D000FECE6 /* Optional.swift in Sources */,
+				CBCF4B6D256E93DC000FECE6 /* ViperTransitionPromise.swift in Sources */,
+				CBCF4B79256E93DC000FECE6 /* ModuleInput.swift in Sources */,
+				CBCF4B71256E93DC000FECE6 /* TransitionNavigationStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +732,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCF4B7E256E93DC000FECE6 /* ModuleOutput.swift in Sources */,
+				CBCF4B62256E93DC000FECE6 /* CloseTransitionStyle.swift in Sources */,
+				CBCF4B66256E93DC000FECE6 /* CloseTransitionPromise.swift in Sources */,
+				CBCF4B5E256E93DC000FECE6 /* TransitionPromise.swift in Sources */,
+				CBCF4B82256E93DC000FECE6 /* Module.swift in Sources */,
+				CBCF4B52256E93DC000FECE6 /* UIViewController.swift in Sources */,
+				CBCF4B86256E93DC000FECE6 /* ViewOutputProvider.swift in Sources */,
+				CBCF4B6A256E93DC000FECE6 /* TransitionStyle.swift in Sources */,
+				CBCF4B56256E93DC000FECE6 /* TransitionHandler.swift in Sources */,
+				CBCF4B76256E93DC000FECE6 /* TransitionHandlerError.swift in Sources */,
+				CBCF4B5A256E93DC000FECE6 /* CustomTransitionPromise.swift in Sources */,
+				CBCF4BA1256E949D000FECE6 /* Optional.swift in Sources */,
+				CBCF4B6E256E93DC000FECE6 /* ViperTransitionPromise.swift in Sources */,
+				CBCF4B7A256E93DC000FECE6 /* ModuleInput.swift in Sources */,
+				CBCF4B72256E93DC000FECE6 /* TransitionNavigationStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +774,7 @@
 		CB112412256BF9AE00215E47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -609,6 +848,7 @@
 		CB112413256BF9AE00215E47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -676,6 +916,7 @@
 		CB112426256BF9CE00215E47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -749,6 +990,7 @@
 		CB112427256BF9CE00215E47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -815,6 +1057,7 @@
 		CB11243B256BF9EC00215E47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -888,6 +1131,7 @@
 		CB11243C256BF9EC00215E47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
