@@ -11,25 +11,25 @@ import UIKit
 // MARK: - TransitionStyle
 
 /// Auxililary enum for the `transition` style
-enum TransitionStyle {
+public enum TransitionStyle {
 
     // MARK: - Split
 
-    enum Split {
+    public enum Split {
         case detail
         case `default`
     }
 
     // MARK: - Navigation
 
-    enum Navigation {
+    public enum Navigation {
 
         case push
         case pop
         case present
 
         // swiftlint:disable nesting
-        enum ReplaceStyle {
+        public enum ReplaceStyle {
             case all
             case last
         }

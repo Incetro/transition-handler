@@ -11,10 +11,10 @@ import UIKit
 // MARK: - CloseTransitionStyle
 
 /// Shows how we should close some controller
-enum CloseTransitionStyle {
+public enum CloseTransitionStyle {
 
     /// Auxililary enum for the `navigation` style
-    enum NavigationControllerStyle {
+    public enum NavigationControllerStyle {
 
         /// Pop action to the given controller
         case pop(to: UIViewController)

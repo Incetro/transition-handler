@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - ViperTransitionPromise
 
-final class ViperTransitionPromise<T>: TransitionPromise<T> {
+public final class ViperTransitionPromise<T>: TransitionPromise<T> {
 
     /// NavigationController for destnation which is used
     /// when you need to set a different controller
@@ -28,7 +28,7 @@ final class ViperTransitionPromise<T>: TransitionPromise<T> {
     /// for your promise if default  presentation style isn't what do you want
     ///
     /// - Returns: Current promise
-    func to(_ style: TransitionStyle) -> ViperTransitionPromise<T> {
+    public func to(_ style: TransitionStyle) -> ViperTransitionPromise<T> {
         promise = nil
         promise { [weak self] in
             guard let destination = self?.destination else {
@@ -93,7 +93,7 @@ final class ViperTransitionPromise<T>: TransitionPromise<T> {
     ///
     /// - Parameter navigationController: navigationController for destionation
     /// - Returns: P
-    func set(navigationController: UINavigationController) -> ViperTransitionPromise<T> {
+    public func set(navigationController: UINavigationController) -> ViperTransitionPromise<T> {
         self.navigationController = navigationController
         return self
     }
@@ -102,7 +102,7 @@ final class ViperTransitionPromise<T>: TransitionPromise<T> {
     ///
     /// - Parameter transitioningDelegate: delegate for destination
     /// - Returns: Current promise
-    func set(transitioningDelegate: UIViewControllerTransitioningDelegate) -> ViperTransitionPromise<T> {
+    public func set(transitioningDelegate: UIViewControllerTransitioningDelegate) -> ViperTransitionPromise<T> {
         self.destination?.transitioningDelegate = transitioningDelegate
         return self
     }
@@ -110,7 +110,7 @@ final class ViperTransitionPromise<T>: TransitionPromise<T> {
     /// Gives you basic template to create custom transition
     ///
     /// - Returns: Custom Promise with setups
-    func customTransition() -> CustomTransitionPromise<T> {
+    public func customTransition() -> CustomTransitionPromise<T> {
         let destination = self.destination.unwrap(TransitionHandlerError.nilController("Destination"))
         promise = nil
         return CustomTransitionPromise(source: source, destination: destination, for: type)

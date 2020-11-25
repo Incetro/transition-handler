@@ -15,7 +15,7 @@ import Foundation
 /// - `push`: Push your module to `UINavigationController`
 /// - `pop`: Pop your module in `UINavigationController`
 /// - `present`: Present your module in `UINavigationController`
-enum TransitionNavigationStyle {
+public enum TransitionNavigationStyle {
     case push
     case pop
     case present

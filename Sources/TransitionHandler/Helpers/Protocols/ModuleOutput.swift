@@ -10,5 +10,5 @@ import Foundation
 
 // MARK: - ModuleOutput
 
-protocol ModuleOutput: class {
+public protocol ModuleOutput: class {
 }

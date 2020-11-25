@@ -8,11 +8,11 @@
 
 import UIKit
 
-typealias PromiseActionBlock = (() throws -> Void)
+public typealias PromiseActionBlock = (() throws -> Void)
 
 // MARK: - CloseTransitionPromise
 
-final class CloseTransitionPromise {
+public final class CloseTransitionPromise {
 
     var isAnimated: Bool {
         animated
@@ -28,11 +28,11 @@ final class CloseTransitionPromise {
         self.source = source
     }
 
-    func promise(_ promise: @escaping PromiseActionBlock) {
+    public func promise(_ promise: @escaping PromiseActionBlock) {
         self.promise = promise
     }
 
-    func animate(_ animate: Bool) -> CloseTransitionPromise {
+    public func animate(_ animate: Bool) -> CloseTransitionPromise {
         animated = animate
         return self
     }
@@ -45,7 +45,7 @@ final class CloseTransitionPromise {
     /// for your promise if default style isn't what do you want
     ///
     /// - Returns: Current promise
-    func with(_ style: CloseTransitionStyle) -> CloseTransitionPromise {
+    public func with(_ style: CloseTransitionStyle) -> CloseTransitionPromise {
         promise = nil
         promise = { [weak self] in
             guard let source = self?.source, let animated = self?.animated else {
@@ -97,7 +97,7 @@ final class CloseTransitionPromise {
     /// Сonfigure the current promise with the first controller found by condition
     ///
     /// - Returns: Current promise
-    func conditionPop(_ condition: (UIViewController) -> Bool) -> CloseTransitionPromise {
+    public func conditionPop(_ condition: (UIViewController) -> Bool) -> CloseTransitionPromise {
         let navigationController = source
             .navigationController
             .unwrap(TransitionHandlerError.nilController("Navigation"))
@@ -109,7 +109,7 @@ final class CloseTransitionPromise {
     }
 
     /// Make transition
-    func perform() {
+    public func perform() {
         do {
             try self.promise?()
         } catch {

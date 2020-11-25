@@ -15,7 +15,7 @@ import Foundation
 /// - `custom`:  Allows you to pass your own string for an error type that is not specified in the enum
 /// - `nilController`: Used if the transition is not possible due to the lack of `source` or `destination`
 /// - `cast`: To track type cast errors during configuration of `promises`
-enum TransitionHandlerError: LocalizedError {
+public enum TransitionHandlerError: LocalizedError {
 
     case custom(String)
     case nilController(String)

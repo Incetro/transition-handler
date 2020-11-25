@@ -8,12 +8,12 @@
 
 import UIKit
 
-typealias TransitionConfigureBlock<T> = (T) -> Void
+public typealias TransitionConfigureBlock<T> = (T) -> Void
 
 // MARK: - ParentType
 
 /// Shows how we should get parent controller
-enum ParentType {
+public enum ParentType {
 
     /// `first UIViewController` in the hierarchy of `UIViewController's`
     case most
@@ -24,7 +24,7 @@ enum ParentType {
 
 // MARK: - TransitionHandler
 
-protocol TransitionHandler: class {
+public protocol TransitionHandler: class {
 
     /// Return current module's input
     var moduleInput: ModuleInput? { get }
@@ -82,12 +82,14 @@ protocol TransitionHandler: class {
     ///
     /// - Important: this method runs `asynchronous` in `main queue`
     /// - Parameter item: item fot sharing
+    #if !os(tvOS)
     func showShareDialog(withItem item: Any)
+    #endif
 }
 
 extension TransitionHandler {
 
-    var moduleOutput: ModuleOutput? {
+    public var moduleOutput: ModuleOutput? {
         moduleInput as? ModuleOutput
     }
 }
@@ -96,7 +98,7 @@ extension TransitionHandler {
 
 extension TransitionHandler where Self: UIViewController {
 
-    func parent(_ type: ParentType) -> TransitionHandler? {
+    public func parent(_ type: ParentType) -> TransitionHandler? {
         switch type {
         case .prev:
             return parent
@@ -115,7 +117,8 @@ extension TransitionHandler where Self: UIViewController {
         }
     }
 
-    func showShareDialog(withItem item: Any) {
+    #if !os(tvOS)
+    public func showShareDialog(withItem item: Any) {
         let activityViewController = UIActivityViewController(activityItems: [item], applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view
         activityViewController.excludedActivityTypes = [UIActivity.ActivityType.airDrop]
@@ -123,5 +126,6 @@ extension TransitionHandler where Self: UIViewController {
             self.present(activityViewController, animated: true, completion: nil)
         }
     }
+    #endif
 }
 

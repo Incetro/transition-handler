@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Module
 
-protocol Module {
+public protocol Module {
 
     /// Current module's view type
     associatedtype View
@@ -26,7 +26,7 @@ protocol Module {
 
 // MARK: - AdvancedModule
 
-protocol AdvancedModule: Module {
+public protocol AdvancedModule: Module {
 
     associatedtype Data
 
@@ -37,7 +37,7 @@ protocol AdvancedModule: Module {
 
 extension AdvancedModule {
 
-    static func instantiate() -> View {
+    public static func instantiate() -> View {
         fatalError("You must use `instantiate(withData:)` method in advanced modules")
     }
 }
