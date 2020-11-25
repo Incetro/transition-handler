@@ -10,6 +10,7 @@ import Foundation
 
 // MARK: - ModuleInput
 
+/// Input `layer` for communication between modules and most often it is a presenter 
 public protocol ModuleInput: class {
 
     /// Set module output for the current module

@@ -16,10 +16,19 @@ public class TransitionPromise<T> {
 
     // MARK: Properties
 
+    /// Source controller which trigger the transition
     unowned var source: UIViewController
+
+    /// The controller that is the target of the transition
     var destination: UIViewController?
+
+    /// Promise that contains closure with setups
     var promise: PromiseAction?
+
+    /// Module type that is the target of the transition
     var type: T.Type
+
+    /// True if need to animate presentation of source controller
     private(set) var animated = true
 
     // MARK: - Initializers
@@ -36,7 +45,7 @@ public class TransitionPromise<T> {
         self.type = type
     }
 
-    // MARK: - Useful methods
+    // MARK: - Useful
 
     /// Configure destination ModuleInput
     ///

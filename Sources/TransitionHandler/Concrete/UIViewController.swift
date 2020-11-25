@@ -70,9 +70,3 @@ extension UIViewController: TransitionHandler {
         return close
     }
 }
-
-// MARK: - UINavigationControllerDelegate
-
-extension UIViewController: UINavigationControllerDelegate {
-}
-
