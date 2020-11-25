@@ -23,9 +23,9 @@ public final class ViperTransitionPromise<T>: TransitionPromise<T> {
         animated
     }
 
-    // MARK: - Useful
-
     // swiftlint:disable cyclomatic_complexity
+
+    // MARK: - Useful
 
     /// Configures the current promise with the specific `transition` style
     ///
