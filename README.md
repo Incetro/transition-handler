@@ -46,30 +46,50 @@ import TransitionHandler
 // MARK: - YourViewController
 
 final class YourViewController: UIViewController {
-/// Your implementation
+    /// Your implementation
 }
 
 // MARK: - YourModuleInput
 
 protocol YourModuleInput: ModuleInput {
-/// Your implementation
+    /// Your implementation
 }
+```
+Your module with data:
 
+```
 // MARK: - YourModule
 
 final class YourModule: AdvancedModule {
 
-        // MARK: - Aliases
+    // MARK: - Aliases
 
-        typealias Input = YourModuleInput
-        typealias View = YourViewController
+    typealias Input = YourModuleInput
+    typealias View = YourViewController
 
-        struct Data {
-            let someString: String
-            let someInt: Int
-        }
+    struct Data {
+        let someString: String
+        let someInt: Int
+    }
 
     static func instantiate(withData data: Data) -> YourViewController {
+        /// Your implementation returning view controller
+    }
+}
+```
+Or your module without data:
+
+```
+// MARK: - YourModule
+
+final class YourModule: Module {
+
+    // MARK: - Aliases
+
+    typealias Input = YourModuleInput
+    typealias View = YourViewController
+
+    static func instantiate() -> YourViewController {
         /// Your implementation returning view controller
     }
 }
@@ -81,6 +101,14 @@ let transitionHandler: TransitionHandler = UIViewController()
 ### Now you can setup your transition:
 
 ```
+/// Close current module
+transitionHandler
+    .closeCurrentModule()
+```
+
+Without data:
+
+```
 /// Open module with select presentation, animation and setup output
 transitionHandler
     .openModule(YourModule.self)
@@ -88,16 +116,15 @@ transitionHandler
     .animate(true)
     .then { $0.setModuleOutput(moduleOutput) }
 ```
+With data:
+
 ```
 /// Open module with data
-transitionHandler
-    .openModule(YourModule.self, withData: .init(someString: "something", someInt: 13))
-    .perform()
-```
-```
-/// Close current module
-transitionHandler
-    .closeCurrentModule()
+func openYourModule(withYourData data: String) {
+    transitionHandler
+        .openModule(YourModule.self, withData: data)
+        .perform()
+}
 ```
 
 ### Extensions: <a name="extensions"></a>
