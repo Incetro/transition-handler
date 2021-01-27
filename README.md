@@ -55,7 +55,7 @@ protocol YourModuleInput: ModuleInput {
     /// Your implementation
 }
 ```
-Your module with data:
+Your module with data for initiate:
 
 ```
 // MARK: - YourModule
@@ -67,15 +67,24 @@ final class YourModule: AdvancedModule {
     typealias Input = YourModuleInput
     typealias View = YourViewController
 
-    struct Data {
-        let someString: String
-        let someInt: Int
-    }
-
+    /// The data with which the module is initiated
+    typealias Data = YourPlainObject
+    
     static func instantiate(withData data: Data) -> YourViewController {
         /// Your implementation returning view controller
     }
 }
+```
+Your some plain object model:
+
+```
+// MARK: - YourPlainObject
+
+struct YourPlainObject {
+	let someString: String
+	let someInt: Int
+}
+
 ```
 Or your module without data:
 
@@ -120,11 +129,20 @@ With data:
 
 ```
 /// Open module with data
-func openYourModule(withYourData data: String) {
+func openYourModule(withYourData data: YourPlainObject) {
     transitionHandler
         .openModule(YourModule.self, withData: data)
         .perform()
 }
+
+/// Open module with data and setup navigation controller, presentation style
+func openYourModule(withYourData data: YourPlainObject) {
+	transitionHandler
+		 .openModule(YourModule.self, withData: data)
+		 .set(navigationController: yourNavigationController())
+		 .to(.push)
+		 .perform()
+}		 
 ```
 
 ### Extensions: <a name="extensions"></a>
