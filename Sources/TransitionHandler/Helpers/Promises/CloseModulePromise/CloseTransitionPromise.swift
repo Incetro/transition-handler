@@ -43,12 +43,12 @@ public final class CloseTransitionPromise {
 
     // MARK: - Useful
 
-    // Set promise for current transition
+    /// Set promise for current transition
     public func promise(_ promise: @escaping PromiseAction) {
         self.promise = promise
     }
 
-    // Set animate property for current transition
+    /// Set animate property for current transition
     public func animate(_ animate: Bool) -> CloseTransitionPromise {
         animated = animate
         return self
@@ -87,7 +87,9 @@ public final class CloseTransitionPromise {
                     if navigationController.children.count > 1 {
                         navigationController.popViewController(animated: animated)
                     } else {
-                        throw TransitionHandlerError.custom("Can't make `simplePop` because UINavigationController children count < 2")
+                        throw TransitionHandlerError.custom(
+                            "Can't make `simplePop` because UINavigationController children count < 2"
+                        )
                     }
                 case .conditionPop:
                     guard let found = self?.foundViewController else {
@@ -103,7 +105,9 @@ public final class CloseTransitionPromise {
                         navigationController.setViewControllers(controllers, animated: false)
                         navigationController.popViewController(animated: animated)
                     } else {
-                        throw TransitionHandlerError.custom("Can't make `forcePop` because UINavigationController children count < 2")
+                        throw TransitionHandlerError.custom(
+                            "Can't make `forcePop` because UINavigationController children count < 2"
+                        )
                     }
                 }
             }

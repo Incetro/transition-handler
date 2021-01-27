@@ -12,7 +12,12 @@ import Foundation
 
 extension Optional {
 
-    func unwrap(_ hint: @autoclosure () -> String? = nil, file: StaticString = #file, line: UInt = #line) -> Wrapped {
+    /// Unwrap with hint
+    func unwrap(
+        _ hint: @autoclosure () -> String? = nil,
+        file: StaticString = #file,
+        line: UInt = #line
+    ) -> Wrapped {
         guard let unwrapped = self else {
             var message = "Required value was nil in \(file), at line \(line)"
             if let hint = hint() {
@@ -23,7 +28,12 @@ extension Optional {
         return unwrapped
     }
 
-    func unwrap(_ error: @autoclosure () -> Error, file: StaticString = #file, line: UInt = #line) -> Wrapped {
+    /// Unwrap with error
+    func unwrap(
+        _ error: @autoclosure () -> Error,
+        file: StaticString = #file,
+        line: UInt = #line
+    ) -> Wrapped {
         guard let unwrapped = self else {
             var message = "Required value was nil in \(file), at line \(line)"
             message.append(". Debugging hint: \(error().localizedDescription)")
@@ -32,7 +42,13 @@ extension Optional {
         return unwrapped
     }
 
-    func unwrap<T>(as type: T.Type, _ hint: @autoclosure () -> String? = nil, file: StaticString = #file, line: UInt = #line) -> T {
+    /// Unwrap type with hint
+    func unwrap<T>(
+        as type: T.Type,
+        _ hint: @autoclosure () -> String? = nil,
+        file: StaticString = #file,
+        line: UInt = #line
+    ) -> T {
         guard let unwrapped = self as? T else {
             var message = "Cannot convert value to type '\(T.self)'"
             if let hint = hint() {
@@ -43,7 +59,13 @@ extension Optional {
         return unwrapped
     }
 
-    func unwrap<T>(as type: T.Type, _ error: @autoclosure () -> Error, file: StaticString = #file, line: UInt = #line) -> T {
+    /// Unwrap type with error
+    func unwrap<T>(
+        as type: T.Type,
+        _ error: @autoclosure () -> Error,
+        file: StaticString = #file,
+        line: UInt = #line
+    ) -> T {
         guard let unwrapped = self as? T else {
             var message = "Cannot convert value to type '\(T.self)'"
             message.append(". Debugging hint: \(error().localizedDescription)")
