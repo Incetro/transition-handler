@@ -1,0 +1,2 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionHandler.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Layout.framework
