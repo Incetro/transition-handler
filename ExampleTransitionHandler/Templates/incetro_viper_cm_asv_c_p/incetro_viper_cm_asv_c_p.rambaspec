@@ -1,0 +1,62 @@
+# Template information section
+name: "incetro_viper_cm_asv_c_p"
+summary: "Swift VIPER module template with UIViewController playing as a View and with CellController approach"
+author: "incetro"
+version: "0.0.1"
+license: "MIT"
+
+# The declarations for code files
+code_files:
+
+# Module
+
+- {name: Module/Module.swift, path: Code/Module/Module.swift.liquid}
+
+# Assembly
+- {name: Assembly/Assembly.swift, path: Code/Assembly/Assembly.swift.liquid}
+
+# View layer
+- {name: View/ContentManager/ContentManager.swift, path: Code/View/ContentManager/ContentManager.swift.liquid}
+- {name: View/ContentManager/ContentManagerImplementation.swift, path: Code/View/ContentManager/ContentManagerImplementation.swift.liquid}
+
+- {name: View/ViewInput.swift, path: Code/View/ViewInput.swift.liquid}
+- {name: View/ViewOutput.swift, path: Code/View/ViewOutput.swift.liquid}
+- {name: View/ViewController.swift, path: Code/View/ViewController.swift.liquid}
+- {name: View/ViewControllerAppearance.swift, path: Code/View/ViewControllerAppearance.swift.liquid}
+
+- {name: View/ContentManager/{{ prefix }}{{ module_info.name }}ViewModel/ViewModelProtocol.swift, custom_name: "{{ prefix }}{{ module_info.name }}ViewModelProtocol.swift", path: Code/View/ContentManager/ViewModel/ViewModelProtocol.swift.liquid}
+- {name: View/ContentManager/{{ prefix }}{{ module_info.name }}ViewModel/ViewModel.swift, custom_name: "{{ prefix }}{{ module_info.name }}ViewModel.swift", path: Code/View/ContentManager/ViewModel/ViewModel.swift.liquid}
+
+# Presenter
+- {name: Presenter/ModuleInput.swift, path: Code/Presenter/ModuleInput.swift.liquid}
+- {name: Presenter/ModuleOutput.swift, path: Code/Presenter/ModuleOutput.swift.liquid}
+- {name: Presenter/Presenter.swift, path: Code/Presenter/Presenter.swift.liquid}
+- {name: Presenter/{{ custom_parameters.cell }}ViewModelDesigner/ViewModelDesigner.swift, path: Code/Presenter/ViewModelDesigner/ViewModelDesigner.swift.liquid}
+- {name: Presenter/{{ custom_parameters.cell }}ViewModelDesigner/ViewModelDesignerImplementation.swift, path: Code/Presenter/ViewModelDesigner/ViewModelDesignerImplementation.swift.liquid}
+
+# Interactor
+- {name: Interactor/InteractorInput.swift, path: Code/Interactor/InteractorInput.swift.liquid}
+- {name: Interactor/InteractorOutput.swift, path: Code/Interactor/InteractorOutput.swift.liquid}
+- {name: Interactor/Interactor.swift, path: Code/Interactor/Interactor.swift.liquid}
+
+# Router
+- {name: Router/RouterInput.swift, path: Code/Router/RouterInput.swift.liquid}
+- {name: Router/Router.swift, path: Code/Router/Router.swift.liquid}
+
+test_files:
+
+# Assembly tests
+- {name: Assembly/AssemblyTests.swift, path: Tests/Assembly/AssemblyTests.swift.liquid}
+
+# View tests
+- {name: View/ViewTests.swift, path: Tests/View/ViewTests.swift.liquid}
+- {name: View/ContentManager/ContentManagerTests.swift, path: Tests/View/ContentManager/ContentManagerTests.swift.liquid}
+
+# Interactor tests
+- {name: Interactor/InteractorTests.swift, path: Tests/Interactor/InteractorTests.swift.liquid}
+
+# Presenter tests
+- {name: Presenter/PresenterTests.swift, path: Tests/Presenter/PresenterTests.swift.liquid}
+
+# Router tests
+- {name: Router/RouterTests.swift, path: Tests/Router/RouterTests.swift.liquid}

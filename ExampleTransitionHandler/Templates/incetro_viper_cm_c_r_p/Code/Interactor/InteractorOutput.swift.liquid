@@ -1,0 +1,14 @@
+{% include 'header' %}
+
+// MARK: - {{ prefix }}{{ module_info.name }}InteractorOutput
+
+protocol {{ prefix }}{{ module_info.name }}InteractorOutput: class, InteractorOutput {
+    
+    /// {{ custom_parameters.entities }} by the given request have been successfully obtained
+    /// - Parameters:
+    ///   - {{ custom_parameters.entities | downcase }}: result {{ custom_parameters.entities | downcase }}
+    func obtain{{ custom_parameters.entities }}Success({{ custom_parameters.entities | downcase }}: [{{ custom_parameters.plain }}PlainObject])
+
+    /// There are no more objects left to obtain
+    func pagintaionHasBeenCompleted()
+}

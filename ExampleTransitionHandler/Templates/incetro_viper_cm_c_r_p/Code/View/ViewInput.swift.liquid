@@ -1,0 +1,21 @@
+{% include 'header' %}
+
+// MARK: - {{ prefix }}{{ module_info.name }}ViewInput
+
+protocol {{ prefix }}{{ module_info.name }}ViewInput: class, ViewInput {
+    
+    /// Setup initial view state
+    func setupInitialState()
+    
+    /// Update data
+    ///
+    /// - Parameter viewModels: new data for UITableView instance
+    func update(_ viewModels: [{{ custom_parameters.cell }}CellViewModelProtocol])
+    
+    /// Stop pull to refresh loader
+    func stopPullToRefreshIfNeeded()
+
+    /// Setup infinite scroll
+    /// - Parameter isEnabled: true if infinite scroll is enabled
+    func setupInfiniteScroll(isEnabled: Bool)
+}

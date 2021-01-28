@@ -1,0 +1,46 @@
+{% include 'header' %}
+
+import UIKit
+import AloeStackView
+
+// MARK: - {{ prefix }}{{ module_info.name }}ContentManager
+
+final class {{ prefix }}{{ module_info.name }}ContentManagerImplementation: NSObject, {{ prefix }}{{ module_info.name }}ContentManager {
+    
+    // MARK: - Properties
+
+    /// Current AloeStackView instance
+    private var stackView: AloeStackView?
+    
+    // MARK: - Initializers
+
+    // MARK: - ContentManager
+
+    func updateData(_ viewModel: {{ prefix }}{{ module_info.name }}ViewModelProtocol) {
+    }
+
+    func configure(stackView: AloeStackView) {
+        self.stackView = stackView
+        setup()
+    }
+}
+
+// MARK: - Actions
+
+extension {{ prefix }}{{ module_info.name }}ContentManagerImplementation {
+    
+}
+
+// MARK: - Layout
+
+extension {{ prefix }}{{ module_info.name }}ContentManagerImplementation {
+    
+    private func setup() {
+
+    }
+}
+
+// MARK: - LayoutConstants
+
+private struct LayoutConstants {
+}

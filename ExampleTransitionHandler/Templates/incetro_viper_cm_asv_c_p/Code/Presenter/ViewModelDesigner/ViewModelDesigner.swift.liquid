@@ -1,0 +1,12 @@
+{% include 'header' %}
+
+import Foundation
+
+// MARK: - {{ prefix }}{{ module_info.name }}ViewModelDesigner
+
+protocol {{ prefix }}{{ module_info.name }}ViewModelDesigner {
+    
+    /// Converts {{ custom_parameters.plain }}PlainObject to {{ prefix }}{{ module_info.name }}ViewModelProtocol
+    /// - Parameter {{ custom_parameters.plain_name }}: some {{ custom_parameters.plain_name }}
+    func viewModel(from {{ custom_parameters.plain_name }}: {{ custom_parameters.plain }}PlainObject) -> {{ prefix }}{{ module_info.name }}ViewModelProtocol
+}

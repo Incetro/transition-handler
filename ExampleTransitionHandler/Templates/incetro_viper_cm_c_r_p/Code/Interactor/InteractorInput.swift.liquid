@@ -1,0 +1,16 @@
+{% include 'header' %}
+
+import Foundation
+
+// MARK: - {{ prefix }}{{ module_info.name }}InteractorInput
+
+protocol {{ prefix }}{{ module_info.name }}InteractorInput {
+    
+    /// Obtain {{ custom_parameters.entities | downcase }} list
+    /// (pagination will be reset)
+    func obtain{{ custom_parameters.entities }}()
+
+    /// Obtain next {{ custom_parameters.entities | downcase }} batch
+    /// (pagination will be saved)
+    func obtainNextPage()
+}

@@ -1,0 +1,21 @@
+{% include 'header' %}
+
+import Foundation
+
+// MARK: - {{ prefix }}{{ module_info.name }}ViewModel
+
+struct {{ prefix }}{{ module_info.name }}ViewModel: {{ prefix }}{{ module_info.name }}ViewModelProtocol {
+    
+    // MARK: - Properties
+
+    let {{ custom_parameters.plain | downcase }}: {{ custom_parameters.plain }}PlainObject
+
+    // MARK: - Initializers
+
+    /// Default initializer
+    /// - Parameters:
+    ///   - {{ custom_parameters.plain | downcase }}: current {{ custom_parameters.plain | downcase }} model
+    init({{ custom_parameters.plain | downcase }}: {{ custom_parameters.plain }}PlainObject) {
+        self.{{ custom_parameters.plain | downcase }} = {{ custom_parameters.plain | downcase }}
+    }
+}

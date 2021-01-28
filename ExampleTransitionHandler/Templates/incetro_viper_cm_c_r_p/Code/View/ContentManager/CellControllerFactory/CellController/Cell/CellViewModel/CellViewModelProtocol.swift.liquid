@@ -1,0 +1,11 @@
+{% include 'header' %}
+
+import Foundation
+
+// MARK: - {{ custom_parameters.cell }}CellViewModelProtocol
+
+protocol {{ custom_parameters.cell }}CellViewModelProtocol {
+    
+    /// Parent {{ custom_parameters.plain | downcase }} object instance
+    var {{ custom_parameters.plain | downcase }}: {{ custom_parameters.plain }}PlainObject { get }
+}

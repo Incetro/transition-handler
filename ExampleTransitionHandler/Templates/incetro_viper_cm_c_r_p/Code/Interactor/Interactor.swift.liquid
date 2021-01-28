@@ -1,0 +1,62 @@
+{% include 'header' %}
+
+import Foundation
+
+// MARK: - {{ prefix }}{{ module_info.name }}Interactor
+
+final class {{ prefix }}{{ module_info.name }}Interactor {
+    
+    // MARK: - Properties
+    
+    /// Presenter instance
+    weak var output: {{ prefix }}{{ module_info.name }}InteractorOutput?
+
+    /// {{ custom_parameters.entities }}Service instance
+    private let {{ custom_parameters.entities | downcase }}Service: {{ custom_parameters.entities }}Service
+
+    /// Paginator instance
+    private var paginator = Paginator<{{ custom_parameters.plain }}PlainObject>(pageSize: 10)
+
+    /// Default initializer
+    /// - Parameters:
+    ///   - {{ custom_parameters.entities | downcase }}Service: {{ custom_parameters.entities }}Service instance
+    init(
+        {{ custom_parameters.entities | downcase }}Service: {{ custom_parameters.entities }}Service
+    ) {
+        self.{{ custom_parameters.entities | downcase }}Service = {{ custom_parameters.entities | downcase }}Service
+        setupPaginator()
+    }
+
+    // MARK: - Private
+
+    private func setupPaginator() {
+        paginator.fetchHandler = { [weak self] (paginator, page, pageSize) in
+            self?.{{ custom_parameters.entities | downcase }}Service
+                .obtain(page: page, pageSize: pageSize)
+                .async()
+                .success { ({{ custom_parameters.entities | downcase }}, pagination) in
+                    paginator.received(results: {{ custom_parameters.entities | downcase }}, total: pagination.totalCount)
+                }
+                .failure(paginator.failed)
+        }
+        paginator.resultsHandler = { [weak self] (paginator, {{ custom_parameters.entities | downcase }}) in
+            self?.output?.obtain{{ custom_parameters.entities }}Success({{ custom_parameters.entities | downcase }}: {{ custom_parameters.entities | downcase }})
+        }
+        paginator.completionHandler = { [weak self] _ in
+            self?.output?.pagintaionHasBeenCompleted()
+        }
+    }
+}
+
+// MARK: - {{ prefix }}{{ module_info.name }}InteractorInput
+
+extension {{ prefix }}{{ module_info.name }}Interactor: {{ prefix }}{{ module_info.name }}InteractorInput {
+    
+    func obtain{{ custom_parameters.entities }}() {
+        paginator.fetchFirstPage()
+    }
+
+    func obtainNextPage() {
+        paginator.fetchNextPage()
+    }
+}

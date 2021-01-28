@@ -1,0 +1,18 @@
+{% include 'header' %}
+
+import Foundation
+
+// MARK: - {{ custom_parameters.cell }}CellViewModelDesignerImplementation
+
+final class {{ custom_parameters.cell }}CellViewModelDesignerImplementation {
+
+}
+
+// MARK: - {{ custom_parameters.cell }}ViewModelDesigner
+
+extension {{ custom_parameters.cell }}CellViewModelDesignerImplementation: {{ custom_parameters.cell }}CellViewModelDesigner {
+
+	func viewModel(from {{ custom_parameters.plain | downcase }}: {{ custom_parameters.plain }}PlainObject) -> {{ custom_parameters.cell }}CellViewModelProtocol {
+        {{ custom_parameters.cell }}CellViewModel({{ custom_parameters.plain | downcase }}: {{ custom_parameters.plain | downcase }})
+    }
+}

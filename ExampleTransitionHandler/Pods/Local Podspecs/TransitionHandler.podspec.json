@@ -1,7 +1,7 @@
 {
   "name": "TransitionHandler",
   "module_name": "TransitionHandler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "authors": {
     "incetro": "incetro@ya.ru",
@@ -16,7 +16,7 @@
   "swift_versions": "5.0",
   "source": {
     "git": "https://github.com/Incetro/transition-handler.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "source_files": "Sources/TransitionHandler/**/*.{h,swift}",
   "swift_version": "5.0"

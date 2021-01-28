@@ -6,7 +6,8 @@ source 'https://cdn.cocoapods.org/'
 target 'ExampleTransitionHandler' do
   use_frameworks!
   pod "swift-layout", :git => "https://github.com/Incetro/layout", :tag => "0.0.2"
-  pod "TransitionHandler", :git => "https://github.com/Incetro/transition-handler", :tag => "0.0.1"
+  pod "TransitionHandler", :git => "https://github.com/Incetro/transition-handler", :tag => "0.0.2"
+  pod "Swinject"
 end
 
 post_install do |installer|

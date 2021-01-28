@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-ExampleTransitionHandler/Pods-ExampleTransitionHandler-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework
 ${BUILT_PRODUCTS_DIR}/TransitionHandler/TransitionHandler.framework
 ${BUILT_PRODUCTS_DIR}/swift-layout/Layout.framework

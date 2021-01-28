@@ -1,0 +1,9 @@
+{% include 'header' %}
+
+import Foundation
+
+// MARK: - {{ prefix }}{{ module_info.name }}InteractorInput
+
+protocol {{ prefix }}{{ module_info.name }}InteractorInput {
+    func obtain{{ custom_parameters.plain }}() -> {{ custom_parameters.plain }}PlainObject
+}

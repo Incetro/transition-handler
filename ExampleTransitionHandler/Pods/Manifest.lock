@@ -1,10 +1,16 @@
 PODS:
   - swift-layout (0.0.2)
-  - TransitionHandler (0.0.1)
+  - Swinject (2.7.1)
+  - TransitionHandler (0.0.2)
 
 DEPENDENCIES:
   - swift-layout (from `https://github.com/Incetro/layout`, tag `0.0.2`)
-  - TransitionHandler (from `https://github.com/Incetro/transition-handler`, tag `0.0.1`)
+  - Swinject
+  - TransitionHandler (from `https://github.com/Incetro/transition-handler`, tag `0.0.2`)
+
+SPEC REPOS:
+  trunk:
+    - Swinject
 
 EXTERNAL SOURCES:
   swift-layout:
@@ -12,7 +18,7 @@ EXTERNAL SOURCES:
     :tag: 0.0.2
   TransitionHandler:
     :git: https://github.com/Incetro/transition-handler
-    :tag: 0.0.1
+    :tag: 0.0.2
 
 CHECKOUT OPTIONS:
   swift-layout:
@@ -20,12 +26,13 @@ CHECKOUT OPTIONS:
     :tag: 0.0.2
   TransitionHandler:
     :git: https://github.com/Incetro/transition-handler
-    :tag: 0.0.1
+    :tag: 0.0.2
 
 SPEC CHECKSUMS:
   swift-layout: fbba262013629381d4b6363b92639b651a9d3a75
-  TransitionHandler: 307673e5b40967aae884b9ab50ba718b8fb9cd1a
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  TransitionHandler: 01028ae5e1182b15694c1bed4332d20c219fc676
 
-PODFILE CHECKSUM: cc955b88c0eb61516f5d095065345c8169bc9026
+PODFILE CHECKSUM: b4d3060e085cad609aced4b1909a9e9f6f200d1b
 
 COCOAPODS: 1.10.0

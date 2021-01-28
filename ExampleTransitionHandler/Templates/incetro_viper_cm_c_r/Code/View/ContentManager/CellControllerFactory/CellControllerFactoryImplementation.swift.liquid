@@ -1,0 +1,39 @@
+{% include 'header' %}
+
+import UIKit
+import Swinject
+
+// MARK: - {{ custom_parameters.cell }}CellControllerFactoryImplementation
+
+final class {{ custom_parameters.cell }}CellControllerFactoryImplementation {
+
+    // MARK: - Properties
+    
+    /// DI container instance
+    private let container: Container
+
+    /// TransitionHandler instance
+    private unowned var transitionHandler: TransitionHandler
+    
+    // MARK: - Initializers
+    
+    /// Default initializer
+    /// - Parameters:
+    ///   - container: DI container instance
+    ///   - transitionHandler: TransitionHandler instance
+    init(container: Container, transitionHandler: TransitionHandler) {
+        self.container = container
+        self.transitionHandler = transitionHandler
+    }
+}
+
+// MARK: - {{ custom_parameters.cell }}CellControllerFactory
+
+extension {{ custom_parameters.cell }}CellControllerFactoryImplementation: {{ custom_parameters.cell }}CellControllerFactory {
+
+    func controller(with viewModel: {{ custom_parameters.cell }}CellViewModelProtocol, tableView: UITableView) -> {{ custom_parameters.cell }}CellController {
+        {{ custom_parameters.cell }}CellController.registerCell(on: tableView)
+        let {{ module_info.name | downcase }}Router = container.resolve({{ module_info.name }}RouterInput.self, argument: transitionHandler).unwrap()
+        return {{ custom_parameters.cell }}CellController(viewModel: viewModel, {{ module_info.name | downcase }}Router: {{ module_info.name | downcase }}Router)
+    }
+}

@@ -1,0 +1,21 @@
+{% include 'header' %}
+
+import Foundation
+
+// MARK: - {{ custom_parameters.cell }}CellViewModelDesigner
+
+protocol {{ custom_parameters.cell }}CellViewModelDesigner {
+    
+    /// Converts {{ custom_parameters.plain }}PlainObject to {{ custom_parameters.cell }}CellViewModelProtocol
+    /// - Parameter {{ custom_parameters.plain | downcase }}: some {{ custom_parameters.plain | downcase }}
+    func viewModel(from {{ custom_parameters.plain | downcase }}: {{ custom_parameters.plain }}PlainObject) -> {{ custom_parameters.cell }}CellViewModelProtocol
+}
+
+extension {{ custom_parameters.cell }}CellViewModelDesigner {
+
+    /// Converts [{{ custom_parameters.plain }}PlainObject] to [{{ custom_parameters.cell }}CellViewModelProtocol]
+    /// - Parameter {{ custom_parameters.entities | downcase }}: some {{ custom_parameters.entities | downcase }}
+    func viewModels(from {{ custom_parameters.entities | downcase }}: [{{ custom_parameters.plain }}PlainObject]) -> [{{ custom_parameters.cell }}CellViewModelProtocol] {
+        return {{ custom_parameters.entities | downcase }}.map(viewModel)
+    }
+}

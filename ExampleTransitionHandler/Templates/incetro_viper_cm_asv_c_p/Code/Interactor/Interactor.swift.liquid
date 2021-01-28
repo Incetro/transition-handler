@@ -1,0 +1,31 @@
+{% include 'header' %}
+
+import Foundation
+
+// MARK: - {{ prefix }}{{ module_info.name }}Interactor
+
+final class {{ prefix }}{{ module_info.name }}Interactor {
+    
+    // MARK: - Properties
+    
+    /// Presenter instance
+    weak var output: {{ prefix }}{{ module_info.name }}InteractorOutput?
+
+    /// {{ prefix }}{{ module_info.service }}Service instance
+    private let {{ prefix }}{{ module_info.service_name }}Service: {{ prefix }}{{ module_info.service }}Service
+
+    // MARK: - Initializers
+
+    init({{ prefix }}{{ module_info.service_name }}Service: {{ prefix }}{{ module_info.service }}Service) {
+        self.{{ prefix }}{{ module_info.service_name }}Service = {{ prefix }}{{ module_info.service_name }}Service
+    }
+}
+
+// MARK: - {{ prefix }}{{ module_info.name }}InteractorInput
+
+extension {{ prefix }}{{ module_info.name }}Interactor: {{ prefix }}{{ module_info.name }}InteractorInput {
+    
+    func obtain{{ custom_parameters.plain }}() -> {{ custom_parameters.plain }}PlainObject {
+    	return {{ prefix }}{{ module_info.service_name }}Service.obtain()
+    }
+}
