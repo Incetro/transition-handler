@@ -13,7 +13,7 @@ import Foundation
 extension Optional {
 
     /// Unwrap with hint
-    func unwrap(
+    public func unwrap(
         _ hint: @autoclosure () -> String? = nil,
         file: StaticString = #file,
         line: UInt = #line
@@ -29,7 +29,7 @@ extension Optional {
     }
 
     /// Unwrap with error
-    func unwrap(
+    public func unwrap(
         _ error: @autoclosure () -> Error,
         file: StaticString = #file,
         line: UInt = #line
@@ -43,7 +43,7 @@ extension Optional {
     }
 
     /// Unwrap type with hint
-    func unwrap<T>(
+    public func unwrap<T>(
         as type: T.Type,
         _ hint: @autoclosure () -> String? = nil,
         file: StaticString = #file,
@@ -60,7 +60,7 @@ extension Optional {
     }
 
     /// Unwrap type with error
-    func unwrap<T>(
+    public func unwrap<T>(
         as type: T.Type,
         _ error: @autoclosure () -> Error,
         file: StaticString = #file,
