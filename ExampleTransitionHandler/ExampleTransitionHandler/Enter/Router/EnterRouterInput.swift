@@ -12,7 +12,11 @@ import Foundation
 
 protocol EnterRouterInput: class, RouterInput {
 
+    /// Open first module
+    /// - Parameter moduleOutput: module output instance
     func openFirstModule(moduleOutput: FirstModuleOutput)
 
+    /// Open second module
+    /// - Parameter moduleOutput: module output instance
     func openSecondModule(moduleOutput: SecondModuleOutput)
 }

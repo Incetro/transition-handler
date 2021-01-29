@@ -21,6 +21,6 @@ final class FirstModule: AdvancedModule {
     // MARK: - Module
 
     static func instantiate(withData data: Data) -> FirstViewController {
-        return FirstModuleAssembly().obtainViewController(withData: data)
+        FirstModuleAssembly().obtainViewController(withData: data)
     }
 }

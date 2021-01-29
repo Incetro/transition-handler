@@ -43,9 +43,6 @@ final class EnterViewController: UIViewController {
         return secondButton
     }()
 
-    /// Your some input data
-    private let someData: String = "You transition to First Module!"
-    
     // MARK: - Ovarrides
 
     override func viewDidLoad() {

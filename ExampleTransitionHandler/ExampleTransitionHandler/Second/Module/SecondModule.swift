@@ -20,6 +20,6 @@ final class SecondModule: Module {
     // MARK: - Module
 
     static func instantiate() -> SecondViewController {
-        return SecondModuleAssembly().obtainViewController()
+        SecondModuleAssembly().obtainViewController()
     }
 }

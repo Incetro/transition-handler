@@ -20,6 +20,6 @@ final class EnterModule: Module {
     // MARK: - Module
 
     static func instantiate() -> EnterViewController {
-        return EnterModuleAssembly().obtainViewController()
+        EnterModuleAssembly().obtainViewController()
     }
 }
