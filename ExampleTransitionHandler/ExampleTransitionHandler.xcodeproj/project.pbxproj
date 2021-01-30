@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		029101DEAD5590B1568DA309 /* SecondRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5729FE8D53582EAF3D792 /* SecondRouterInput.swift */; };
+		10A1862844019737B1C41250 /* FirstModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03C5C16C0B6688BD5B6C7AD /* FirstModuleOutput.swift */; };
+		1CE7D3AD65C41E6C88AA18F4 /* EnterModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD39DC48DD5482732DA1E3 /* EnterModuleOutput.swift */; };
+		20E3D675DF5901CE6C1D62FB /* EnterModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3CDC62ED2B3DD011FF6F70 /* EnterModuleInput.swift */; };
+		2B7A0EE85A5B2D898F6B97EC /* FirstRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C36B3CE3770508BD8FDA4 /* FirstRouter.swift */; };
+		2D0E2ABB440005A642D2CEB9 /* FirstModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2A50C73B2C44B6317D141 /* FirstModule.swift */; };
+		2EE9905FCB31E0146BB7BCD9 /* EnterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6CB50EB21E3119FEC5098F /* EnterPresenter.swift */; };
+		30A3CC9FEC134D3D2124D69D /* FirstModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14F6D4C65C6A935DBC4891 /* FirstModuleInput.swift */; };
+		3CDA68F0A67A1F96478DC001 /* EnterViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32BCCE23E4134BF3ECB593F /* EnterViewOutput.swift */; };
+		3D926C147B3281EC747FAE8B /* FirstAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683CB57D3E990281FC2255DC /* FirstAssembly.swift */; };
+		4A0635DFB99C4894BE71B1CD /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17F679F54494B0695187FDA /* SecondPresenter.swift */; };
+		547BF0B5D5F0AA6381456CDB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6126478C6D9B45B48E4169A5 /* SecondViewController.swift */; };
+		5F1825B5C1D63D6BD0DB410E /* FirstViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A103E604C5505FB3F1552A20 /* FirstViewInput.swift */; };
+		5F1AE99D0FA328F4B170CE29 /* SecondModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF384F1E91743979A2FC67 /* SecondModuleInput.swift */; };
+		6255A5672E8FF366B0D6C8F5 /* EnterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FF70FC2E629F20A689522F /* EnterRouter.swift */; };
+		64F5D6294300C6F8E13F2740 /* FirstPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06182BB16F86DF706AE6A7D6 /* FirstPresenter.swift */; };
+		6E29090F034231FEE50E7B5F /* SecondViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253A91C86695F80697646FE4 /* SecondViewOutput.swift */; };
+		8091E5C198E9AC4456E2EC0C /* SecondViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC93342CCDEC469005D3F7B2 /* SecondViewInput.swift */; };
+		994688A9F77C6358DA47E055 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EC47862EF39F78A97E838 /* FirstViewController.swift */; };
+		99E4900A02C226B1FF19EA2F /* SecondModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D2B4B153A5858621E7A42C /* SecondModuleOutput.swift */; };
+		9C0434E25BF5889C4B3A2CD7 /* EnterModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878B795ACBA42FD5876121A /* EnterModule.swift */; };
+		9C4844BBA46D30A518F85E55 /* SecondModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78120651314659C03975AC11 /* SecondModule.swift */; };
+		9E7B36691B19245E2FB7CA5F /* Pods_ExampleTransitionHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554E672F6577EDFE3DBC2627 /* Pods_ExampleTransitionHandler.framework */; };
+		A472D0714F20EC247ECADBBF /* SecondAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44CECD3F532A065A3FA051D /* SecondAssembly.swift */; };
+		A9811523F356B524A25F568C /* EnterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DAB815F4CD6AE4AF87C4B3 /* EnterAssembly.swift */; };
+		B7DC44191E7A1459485D92B7 /* SecondRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7570CF781682C0C164AA34A5 /* SecondRouter.swift */; };
+		DA383350D57265CE673B4DA9 /* FirstRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488CCC83CE385C5FC585A694 /* FirstRouterInput.swift */; };
+		DED647E925C2E909003C024B /* CollectableAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED647E825C2E909003C024B /* CollectableAssembly.swift */; };
+		DED647ED25C2E942003C024B /* AssembliesHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED647EC25C2E942003C024B /* AssembliesHolder.swift */; };
+		DED647F125C2E9AA003C024B /* ExampleAssembliesCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED647F025C2E9AA003C024B /* ExampleAssembliesCollector.swift */; };
+		DED647F625C2EA52003C024B /* AssembliesCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED647F525C2EA52003C024B /* AssembliesCollector.swift */; };
+		DED6480425C2F7BD003C024B /* InteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED647FE25C2F7BD003C024B /* InteractorOutput.swift */; };
+		DED6480525C2F7BD003C024B /* ViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED647FF25C2F7BD003C024B /* ViewOutput.swift */; };
+		DED6480625C2F7BD003C024B /* RouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6480025C2F7BD003C024B /* RouterInput.swift */; };
+		DED6480725C2F7BD003C024B /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6480125C2F7BD003C024B /* ContentManager.swift */; };
+		DED6480825C2F7BD003C024B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6480225C2F7BD003C024B /* Router.swift */; };
+		DED6480925C2F7BD003C024B /* ViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6480325C2F7BD003C024B /* ViewInput.swift */; };
+		DED6480D25C2F9A5003C024B /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6480C25C2F9A5003C024B /* DispatchQueue.swift */; };
+		DEEF95FD25C1835F00F16098 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF95FC25C1835F00F16098 /* AppDelegate.swift */; };
+		DEEF95FF25C1835F00F16098 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF95FE25C1835F00F16098 /* SceneDelegate.swift */; };
+		DEEF960625C1836200F16098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEF960525C1836200F16098 /* Assets.xcassets */; };
+		ED31E98C86D0421FA1CDC89D /* EnterRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453D63108095074CC581250 /* EnterRouterInput.swift */; };
+		F1F78B2380CE0057336F4A3C /* FirstViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8443BFBCA8AE0DEA7590C /* FirstViewOutput.swift */; };
+		FB1809E1BEA0E877A052D9D1 /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A91F1FCABE76C1D0F2C86 /* EnterViewController.swift */; };
+		FCDD2D0F5E2C454B58AA8F50 /* EnterViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7173B987A6CE2E1ACF8E5A4B /* EnterViewInput.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		041C36B3CE3770508BD8FDA4 /* FirstRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstRouter.swift; sourceTree = "<group>"; };
+		06182BB16F86DF706AE6A7D6 /* FirstPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstPresenter.swift; sourceTree = "<group>"; };
+		1878B795ACBA42FD5876121A /* EnterModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnterModule.swift; sourceTree = "<group>"; };
+		24D5729FE8D53582EAF3D792 /* SecondRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondRouterInput.swift; sourceTree = "<group>"; };
+		253A91C86695F80697646FE4 /* SecondViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondViewOutput.swift; sourceTree = "<group>"; };
+		38FF70FC2E629F20A689522F /* EnterRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnterRouter.swift; sourceTree = "<group>"; };
+		4453D63108095074CC581250 /* EnterRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnterRouterInput.swift; sourceTree = "<group>"; };
+		488CCC83CE385C5FC585A694 /* FirstRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstRouterInput.swift; sourceTree = "<group>"; };
+		4A14F6D4C65C6A935DBC4891 /* FirstModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstModuleInput.swift; sourceTree = "<group>"; };
+		554E672F6577EDFE3DBC2627 /* Pods_ExampleTransitionHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleTransitionHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6126478C6D9B45B48E4169A5 /* SecondViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		683CB57D3E990281FC2255DC /* FirstAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstAssembly.swift; sourceTree = "<group>"; };
+		6A6CB50EB21E3119FEC5098F /* EnterPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnterPresenter.swift; sourceTree = "<group>"; };
+		6CAD39DC48DD5482732DA1E3 /* EnterModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnterModuleOutput.swift; sourceTree = "<group>"; };
+		7173B987A6CE2E1ACF8E5A4B /* EnterViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnterViewInput.swift; sourceTree = "<group>"; };
+		71DAB815F4CD6AE4AF87C4B3 /* EnterAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnterAssembly.swift; sourceTree = "<group>"; };
+		7570CF781682C0C164AA34A5 /* SecondRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondRouter.swift; sourceTree = "<group>"; };
+		76BF384F1E91743979A2FC67 /* SecondModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondModuleInput.swift; sourceTree = "<group>"; };
+		78120651314659C03975AC11 /* SecondModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondModule.swift; sourceTree = "<group>"; };
+		859EC47862EF39F78A97E838 /* FirstViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A103E604C5505FB3F1552A20 /* FirstViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstViewInput.swift; sourceTree = "<group>"; };
+		A2D2B4B153A5858621E7A42C /* SecondModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondModuleOutput.swift; sourceTree = "<group>"; };
+		A8920133F4F112BFAC9DB806 /* Pods-ExampleTransitionHandler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTransitionHandler.release.xcconfig"; path = "Target Support Files/Pods-ExampleTransitionHandler/Pods-ExampleTransitionHandler.release.xcconfig"; sourceTree = "<group>"; };
+		A8D8443BFBCA8AE0DEA7590C /* FirstViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstViewOutput.swift; sourceTree = "<group>"; };
+		B03C5C16C0B6688BD5B6C7AD /* FirstModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstModuleOutput.swift; sourceTree = "<group>"; };
+		B17F679F54494B0695187FDA /* SecondPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
+		B23A91F1FCABE76C1D0F2C86 /* EnterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
+		D44CECD3F532A065A3FA051D /* SecondAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondAssembly.swift; sourceTree = "<group>"; };
+		DB3CDC62ED2B3DD011FF6F70 /* EnterModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnterModuleInput.swift; sourceTree = "<group>"; };
+		DDD2A50C73B2C44B6317D141 /* FirstModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstModule.swift; sourceTree = "<group>"; };
+		DED647E825C2E909003C024B /* CollectableAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectableAssembly.swift; sourceTree = "<group>"; };
+		DED647EC25C2E942003C024B /* AssembliesHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssembliesHolder.swift; sourceTree = "<group>"; };
+		DED647F025C2E9AA003C024B /* ExampleAssembliesCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAssembliesCollector.swift; sourceTree = "<group>"; };
+		DED647F525C2EA52003C024B /* AssembliesCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssembliesCollector.swift; sourceTree = "<group>"; };
+		DED647FE25C2F7BD003C024B /* InteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorOutput.swift; sourceTree = "<group>"; };
+		DED647FF25C2F7BD003C024B /* ViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewOutput.swift; sourceTree = "<group>"; };
+		DED6480025C2F7BD003C024B /* RouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterInput.swift; sourceTree = "<group>"; };
+		DED6480125C2F7BD003C024B /* ContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
+		DED6480225C2F7BD003C024B /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		DED6480325C2F7BD003C024B /* ViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInput.swift; sourceTree = "<group>"; };
+		DED6480C25C2F9A5003C024B /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		DEEF95F925C1835F00F16098 /* ExampleTransitionHandler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleTransitionHandler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEEF95FC25C1835F00F16098 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEEF95FE25C1835F00F16098 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DEEF960525C1836200F16098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEEF960A25C1836200F16098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E32BCCE23E4134BF3ECB593F /* EnterViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnterViewOutput.swift; sourceTree = "<group>"; };
+		EDE1D0E35015EBECC6823518 /* Pods-ExampleTransitionHandler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTransitionHandler.debug.xcconfig"; path = "Target Support Files/Pods-ExampleTransitionHandler/Pods-ExampleTransitionHandler.debug.xcconfig"; sourceTree = "<group>"; };
+		FC93342CCDEC469005D3F7B2 /* SecondViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondViewInput.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEEF95F625C1835F00F16098 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E7B36691B19245E2FB7CA5F /* Pods_ExampleTransitionHandler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		173C17912878834288999C7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7173B987A6CE2E1ACF8E5A4B /* EnterViewInput.swift */,
+				E32BCCE23E4134BF3ECB593F /* EnterViewOutput.swift */,
+				B23A91F1FCABE76C1D0F2C86 /* EnterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19497A384E1E722D2CC22149 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				554E672F6577EDFE3DBC2627 /* Pods_ExampleTransitionHandler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CF3324CB43B05A7F649597A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				488CCC83CE385C5FC585A694 /* FirstRouterInput.swift */,
+				041C36B3CE3770508BD8FDA4 /* FirstRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		55384CD5F2781494070A7454 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				24D5729FE8D53582EAF3D792 /* SecondRouterInput.swift */,
+				7570CF781682C0C164AA34A5 /* SecondRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		562091CAFCEC34673B945486 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A103E604C5505FB3F1552A20 /* FirstViewInput.swift */,
+				A8D8443BFBCA8AE0DEA7590C /* FirstViewOutput.swift */,
+				859EC47862EF39F78A97E838 /* FirstViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		646E36572E82DD5A9E60A886 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				76BF384F1E91743979A2FC67 /* SecondModuleInput.swift */,
+				A2D2B4B153A5858621E7A42C /* SecondModuleOutput.swift */,
+				B17F679F54494B0695187FDA /* SecondPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A18FCCC9F298C24AED4BE921 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				C75B86FCDDA1A72EB1E58EC5 /* Module */,
+				BF3AFD9DDD9316FD0A1BC138 /* Assembly */,
+				DE5EF0AEE26C5E1188CD57D6 /* View */,
+				646E36572E82DD5A9E60A886 /* Presenter */,
+				55384CD5F2781494070A7454 /* Router */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		BEC081AB1B8E2008EF5C551F /* First */ = {
+			isa = PBXGroup;
+			children = (
+				DBDB1C9B9240887275353066 /* Module */,
+				C688EC5F2117D7982DE2DDED /* Assembly */,
+				562091CAFCEC34673B945486 /* View */,
+				EA88F26E8AB012DAD3D4CE8B /* Presenter */,
+				3CF3324CB43B05A7F649597A /* Router */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		BF3AFD9DDD9316FD0A1BC138 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				D44CECD3F532A065A3FA051D /* SecondAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		BF9106F1F128E3C8740EE62D /* Enter */ = {
+			isa = PBXGroup;
+			children = (
+				CECB4D9486FE9421DCE7D735 /* Module */,
+				EB555279EBE5A58307EFB7B3 /* Assembly */,
+				173C17912878834288999C7D /* View */,
+				C5D811B9E1C5062EB5D55A82 /* Presenter */,
+				D801A60A18867D10A182F77A /* Router */,
+			);
+			path = Enter;
+			sourceTree = "<group>";
+		};
+		C5D811B9E1C5062EB5D55A82 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DB3CDC62ED2B3DD011FF6F70 /* EnterModuleInput.swift */,
+				6CAD39DC48DD5482732DA1E3 /* EnterModuleOutput.swift */,
+				6A6CB50EB21E3119FEC5098F /* EnterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C5F6D7CDCB6FA8E760FF0AB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDE1D0E35015EBECC6823518 /* Pods-ExampleTransitionHandler.debug.xcconfig */,
+				A8920133F4F112BFAC9DB806 /* Pods-ExampleTransitionHandler.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C688EC5F2117D7982DE2DDED /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				683CB57D3E990281FC2255DC /* FirstAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		C75B86FCDDA1A72EB1E58EC5 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				78120651314659C03975AC11 /* SecondModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		CECB4D9486FE9421DCE7D735 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				1878B795ACBA42FD5876121A /* EnterModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		D801A60A18867D10A182F77A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4453D63108095074CC581250 /* EnterRouterInput.swift */,
+				38FF70FC2E629F20A689522F /* EnterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DBDB1C9B9240887275353066 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				DDD2A50C73B2C44B6317D141 /* FirstModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		DE5EF0AEE26C5E1188CD57D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC93342CCDEC469005D3F7B2 /* SecondViewInput.swift */,
+				253A91C86695F80697646FE4 /* SecondViewOutput.swift */,
+				6126478C6D9B45B48E4169A5 /* SecondViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DED647E725C2E8F5003C024B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DED647E825C2E909003C024B /* CollectableAssembly.swift */,
+				DED647EC25C2E942003C024B /* AssembliesHolder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DED647EF25C2E955003C024B /* AssembiesCollectors */ = {
+			isa = PBXGroup;
+			children = (
+				DED647E725C2E8F5003C024B /* Helpers */,
+				DED647F425C2E9F3003C024B /* Protocols */,
+				DED647F025C2E9AA003C024B /* ExampleAssembliesCollector.swift */,
+			);
+			path = AssembiesCollectors;
+			sourceTree = "<group>";
+		};
+		DED647F425C2E9F3003C024B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DED647F525C2EA52003C024B /* AssembliesCollector.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DED647FC25C2F7BD003C024B /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				DED647FD25C2F7BD003C024B /* Common */,
+			);
+			name = VIPER;
+			path = ExampleTransitionHandler/VIPER;
+			sourceTree = "<group>";
+		};
+		DED647FD25C2F7BD003C024B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DED647FE25C2F7BD003C024B /* InteractorOutput.swift */,
+				DED647FF25C2F7BD003C024B /* ViewOutput.swift */,
+				DED6480025C2F7BD003C024B /* RouterInput.swift */,
+				DED6480125C2F7BD003C024B /* ContentManager.swift */,
+				DED6480225C2F7BD003C024B /* Router.swift */,
+				DED6480325C2F7BD003C024B /* ViewInput.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DED6480B25C2F953003C024B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DED6480C25C2F9A5003C024B /* DispatchQueue.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DEEF95F025C1835F00F16098 = {
+			isa = PBXGroup;
+			children = (
+				DED647FC25C2F7BD003C024B /* VIPER */,
+				DEEF95FB25C1835F00F16098 /* ExampleTransitionHandler */,
+				DEEF95FA25C1835F00F16098 /* Products */,
+				C5F6D7CDCB6FA8E760FF0AB0 /* Pods */,
+				19497A384E1E722D2CC22149 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DEEF95FA25C1835F00F16098 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEEF95F925C1835F00F16098 /* ExampleTransitionHandler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEEF95FB25C1835F00F16098 /* ExampleTransitionHandler */ = {
+			isa = PBXGroup;
+			children = (
+				DEEF95FC25C1835F00F16098 /* AppDelegate.swift */,
+				DEEF95FE25C1835F00F16098 /* SceneDelegate.swift */,
+				DEEF960525C1836200F16098 /* Assets.xcassets */,
+				DEEF960A25C1836200F16098 /* Info.plist */,
+				DED6480B25C2F953003C024B /* Extensions */,
+				BEC081AB1B8E2008EF5C551F /* First */,
+				A18FCCC9F298C24AED4BE921 /* Second */,
+				DED647EF25C2E955003C024B /* AssembiesCollectors */,
+				BF9106F1F128E3C8740EE62D /* Enter */,
+			);
+			path = ExampleTransitionHandler;
+			sourceTree = "<group>";
+		};
+		EA88F26E8AB012DAD3D4CE8B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4A14F6D4C65C6A935DBC4891 /* FirstModuleInput.swift */,
+				B03C5C16C0B6688BD5B6C7AD /* FirstModuleOutput.swift */,
+				06182BB16F86DF706AE6A7D6 /* FirstPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EB555279EBE5A58307EFB7B3 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				71DAB815F4CD6AE4AF87C4B3 /* EnterAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEEF95F825C1835F00F16098 /* ExampleTransitionHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEEF960D25C1836200F16098 /* Build configuration list for PBXNativeTarget "ExampleTransitionHandler" */;
+			buildPhases = (
+				30288F370B83569686D58D61 /* [CP] Check Pods Manifest.lock */,
+				DEEF95F525C1835F00F16098 /* Sources */,
+				DEEF95F625C1835F00F16098 /* Frameworks */,
+				DEEF95F725C1835F00F16098 /* Resources */,
+				B9B897743CFF7167064B5DA5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExampleTransitionHandler;
+			productName = ExampleTransitionHandler;
+			productReference = DEEF95F925C1835F00F16098 /* ExampleTransitionHandler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEEF95F125C1835F00F16098 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					DEEF95F825C1835F00F16098 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = DEEF95F425C1835F00F16098 /* Build configuration list for PBXProject "ExampleTransitionHandler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEEF95F025C1835F00F16098;
+			productRefGroup = DEEF95FA25C1835F00F16098 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEEF95F825C1835F00F16098 /* ExampleTransitionHandler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEEF95F725C1835F00F16098 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEEF960625C1836200F16098 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30288F370B83569686D58D61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExampleTransitionHandler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9B897743CFF7167064B5DA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExampleTransitionHandler/Pods-ExampleTransitionHandler-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExampleTransitionHandler/Pods-ExampleTransitionHandler-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExampleTransitionHandler/Pods-ExampleTransitionHandler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEEF95F525C1835F00F16098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED647F625C2EA52003C024B /* AssembliesCollector.swift in Sources */,
+				DED6480525C2F7BD003C024B /* ViewOutput.swift in Sources */,
+				DED6480725C2F7BD003C024B /* ContentManager.swift in Sources */,
+				DED6480D25C2F9A5003C024B /* DispatchQueue.swift in Sources */,
+				DED647F125C2E9AA003C024B /* ExampleAssembliesCollector.swift in Sources */,
+				DEEF95FD25C1835F00F16098 /* AppDelegate.swift in Sources */,
+				DED6480825C2F7BD003C024B /* Router.swift in Sources */,
+				DED647ED25C2E942003C024B /* AssembliesHolder.swift in Sources */,
+				DEEF95FF25C1835F00F16098 /* SceneDelegate.swift in Sources */,
+				2D0E2ABB440005A642D2CEB9 /* FirstModule.swift in Sources */,
+				3D926C147B3281EC747FAE8B /* FirstAssembly.swift in Sources */,
+				5F1825B5C1D63D6BD0DB410E /* FirstViewInput.swift in Sources */,
+				F1F78B2380CE0057336F4A3C /* FirstViewOutput.swift in Sources */,
+				994688A9F77C6358DA47E055 /* FirstViewController.swift in Sources */,
+				30A3CC9FEC134D3D2124D69D /* FirstModuleInput.swift in Sources */,
+				10A1862844019737B1C41250 /* FirstModuleOutput.swift in Sources */,
+				64F5D6294300C6F8E13F2740 /* FirstPresenter.swift in Sources */,
+				DED647E925C2E909003C024B /* CollectableAssembly.swift in Sources */,
+				DA383350D57265CE673B4DA9 /* FirstRouterInput.swift in Sources */,
+				2B7A0EE85A5B2D898F6B97EC /* FirstRouter.swift in Sources */,
+				9C4844BBA46D30A518F85E55 /* SecondModule.swift in Sources */,
+				A472D0714F20EC247ECADBBF /* SecondAssembly.swift in Sources */,
+				8091E5C198E9AC4456E2EC0C /* SecondViewInput.swift in Sources */,
+				6E29090F034231FEE50E7B5F /* SecondViewOutput.swift in Sources */,
+				547BF0B5D5F0AA6381456CDB /* SecondViewController.swift in Sources */,
+				5F1AE99D0FA328F4B170CE29 /* SecondModuleInput.swift in Sources */,
+				99E4900A02C226B1FF19EA2F /* SecondModuleOutput.swift in Sources */,
+				DED6480925C2F7BD003C024B /* ViewInput.swift in Sources */,
+				4A0635DFB99C4894BE71B1CD /* SecondPresenter.swift in Sources */,
+				DED6480625C2F7BD003C024B /* RouterInput.swift in Sources */,
+				029101DEAD5590B1568DA309 /* SecondRouterInput.swift in Sources */,
+				B7DC44191E7A1459485D92B7 /* SecondRouter.swift in Sources */,
+				DED6480425C2F7BD003C024B /* InteractorOutput.swift in Sources */,
+				9C0434E25BF5889C4B3A2CD7 /* EnterModule.swift in Sources */,
+				A9811523F356B524A25F568C /* EnterAssembly.swift in Sources */,
+				FCDD2D0F5E2C454B58AA8F50 /* EnterViewInput.swift in Sources */,
+				3CDA68F0A67A1F96478DC001 /* EnterViewOutput.swift in Sources */,
+				FB1809E1BEA0E877A052D9D1 /* EnterViewController.swift in Sources */,
+				20E3D675DF5901CE6C1D62FB /* EnterModuleInput.swift in Sources */,
+				1CE7D3AD65C41E6C88AA18F4 /* EnterModuleOutput.swift in Sources */,
+				2EE9905FCB31E0146BB7BCD9 /* EnterPresenter.swift in Sources */,
+				ED31E98C86D0421FA1CDC89D /* EnterRouterInput.swift in Sources */,
+				6255A5672E8FF366B0D6C8F5 /* EnterRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DEEF960B25C1836200F16098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEEF960C25C1836200F16098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEEF960E25C1836200F16098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDE1D0E35015EBECC6823518 /* Pods-ExampleTransitionHandler.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PM34MLKL7J;
+				INFOPLIST_FILE = ExampleTransitionHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Gasol-dev.ExampleTransitionHandler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEEF960F25C1836200F16098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8920133F4F112BFAC9DB806 /* Pods-ExampleTransitionHandler.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PM34MLKL7J;
+				INFOPLIST_FILE = ExampleTransitionHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Gasol-dev.ExampleTransitionHandler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEEF95F425C1835F00F16098 /* Build configuration list for PBXProject "ExampleTransitionHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEEF960B25C1836200F16098 /* Debug */,
+				DEEF960C25C1836200F16098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEEF960D25C1836200F16098 /* Build configuration list for PBXNativeTarget "ExampleTransitionHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEEF960E25C1836200F16098 /* Debug */,
+				DEEF960F25C1836200F16098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEEF95F125C1835F00F16098 /* Project object */;
+}
