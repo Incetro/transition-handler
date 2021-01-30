@@ -11,5 +11,4 @@ import TransitionHandler
 // MARK: - EnterModuleOutput
 
 protocol EnterModuleOutput: ModuleOutput {
-
 }

@@ -11,5 +11,4 @@ import TransitionHandler
 // MARK: - SecondModuleInput
 
 protocol SecondModuleInput: ModuleInput {
-    
 }

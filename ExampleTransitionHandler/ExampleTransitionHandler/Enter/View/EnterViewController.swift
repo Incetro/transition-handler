@@ -21,7 +21,7 @@ final class EnterViewController: UIViewController {
     /// Title label
     private var titleLabel: UILabel = {
         let titleLabel = UILabel()
-        titleLabel.text = "Welcome to Transition Handler example!"
+        titleLabel.text = "Welcome to TransitionHandler example!"
         return titleLabel
     }()
 

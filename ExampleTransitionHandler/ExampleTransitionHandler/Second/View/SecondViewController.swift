@@ -21,7 +21,7 @@ final class SecondViewController: UIViewController {
     /// Label of module
     private let label: UILabel = {
         let label = UILabel()
-        label.text = "You transitioned to Second Module!"
+        label.text = "You transitioned to the Second Module!"
         return label
     }()
 

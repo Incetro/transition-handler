@@ -11,5 +11,4 @@ import TransitionHandler
 // MARK: - FirstModuleInput
 
 protocol FirstModuleInput: ModuleInput {
-    
 }

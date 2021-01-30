@@ -6,9 +6,9 @@
 //  Copyright © 2021 incetro. All rights reserved.
 //
 
-// MARK: - EnterViewInput
-
 import UIKit
+
+// MARK: - EnterViewInput
 
 protocol EnterViewInput: ViewInput {
 
