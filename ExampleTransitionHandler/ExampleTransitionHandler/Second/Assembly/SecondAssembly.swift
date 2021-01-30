@@ -24,7 +24,7 @@ final class SecondModuleAssembly: CollectableAssembly {
     // MARK: - Useful
 
     func obtainViewController() -> SecondViewController {
-        return container.resolve(SecondViewController.self).unwrap()
+        container.resolve(SecondViewController.self).unwrap()
     }
 
     // MARK: - Assembly

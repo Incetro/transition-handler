@@ -36,7 +36,7 @@
 		DA383350D57265CE673B4DA9 /* FirstRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488CCC83CE385C5FC585A694 /* FirstRouterInput.swift */; };
 		DED647E925C2E909003C024B /* CollectableAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED647E825C2E909003C024B /* CollectableAssembly.swift */; };
 		DED647ED25C2E942003C024B /* AssembliesHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED647EC25C2E942003C024B /* AssembliesHolder.swift */; };
-		DED647F125C2E9AA003C024B /* CatchMeAssembliesCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED647F025C2E9AA003C024B /* CatchMeAssembliesCollector.swift */; };
+		DED647F125C2E9AA003C024B /* ExampleAssembliesCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED647F025C2E9AA003C024B /* ExampleAssembliesCollector.swift */; };
 		DED647F625C2EA52003C024B /* AssembliesCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED647F525C2EA52003C024B /* AssembliesCollector.swift */; };
 		DED6480425C2F7BD003C024B /* InteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED647FE25C2F7BD003C024B /* InteractorOutput.swift */; };
 		DED6480525C2F7BD003C024B /* ViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED647FF25C2F7BD003C024B /* ViewOutput.swift */; };
@@ -87,7 +87,7 @@
 		DDD2A50C73B2C44B6317D141 /* FirstModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstModule.swift; sourceTree = "<group>"; };
 		DED647E825C2E909003C024B /* CollectableAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectableAssembly.swift; sourceTree = "<group>"; };
 		DED647EC25C2E942003C024B /* AssembliesHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssembliesHolder.swift; sourceTree = "<group>"; };
-		DED647F025C2E9AA003C024B /* CatchMeAssembliesCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchMeAssembliesCollector.swift; sourceTree = "<group>"; };
+		DED647F025C2E9AA003C024B /* ExampleAssembliesCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAssembliesCollector.swift; sourceTree = "<group>"; };
 		DED647F525C2EA52003C024B /* AssembliesCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssembliesCollector.swift; sourceTree = "<group>"; };
 		DED647FE25C2F7BD003C024B /* InteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorOutput.swift; sourceTree = "<group>"; };
 		DED647FF25C2F7BD003C024B /* ViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewOutput.swift; sourceTree = "<group>"; };
@@ -302,7 +302,7 @@
 			children = (
 				DED647E725C2E8F5003C024B /* Helpers */,
 				DED647F425C2E9F3003C024B /* Protocols */,
-				DED647F025C2E9AA003C024B /* CatchMeAssembliesCollector.swift */,
+				DED647F025C2E9AA003C024B /* ExampleAssembliesCollector.swift */,
 			);
 			path = AssembiesCollectors;
 			sourceTree = "<group>";
@@ -514,7 +514,7 @@
 				DED6480525C2F7BD003C024B /* ViewOutput.swift in Sources */,
 				DED6480725C2F7BD003C024B /* ContentManager.swift in Sources */,
 				DED6480D25C2F9A5003C024B /* DispatchQueue.swift in Sources */,
-				DED647F125C2E9AA003C024B /* CatchMeAssembliesCollector.swift in Sources */,
+				DED647F125C2E9AA003C024B /* ExampleAssembliesCollector.swift in Sources */,
 				DEEF95FD25C1835F00F16098 /* AppDelegate.swift in Sources */,
 				DED6480825C2F7BD003C024B /* Router.swift in Sources */,
 				DED647ED25C2E942003C024B /* AssembliesHolder.swift in Sources */,

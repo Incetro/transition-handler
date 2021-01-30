@@ -21,13 +21,13 @@ final class SecondViewController: UIViewController {
     /// Label of module
     private let label: UILabel = {
         let label = UILabel()
-        label.text = "You transition to Second Module!"
+        label.text = "You transitioned to Second Module!"
         return label
     }()
 
     private let button: UIButton = {
         let button = UIButton()
-        button.setTitle("Change background color of EnterViewController", for: .normal)
+        button.setTitle("Change background color of the EnterViewController", for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.numberOfLines = 0
         button.titleLabel?.textAlignment = .center

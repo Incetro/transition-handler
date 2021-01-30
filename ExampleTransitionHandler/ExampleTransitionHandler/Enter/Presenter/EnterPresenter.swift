@@ -51,7 +51,7 @@ extension EnterPresenter: EnterModuleInput {
 extension EnterPresenter: FirstModuleOutput {
 
     func changeTitleText() {
-        view?.changeTitleText(text: "You tapped button of First module")
+        view?.changeTitleText("You tapped the button of the First module")
     }
 }
 
@@ -60,9 +60,9 @@ extension EnterPresenter: FirstModuleOutput {
 extension EnterPresenter: SecondModuleOutput {
 
     func changeBackgroundColor() {
-        view?.changeTitleText(text: "Welcome to Transition Handler example!")
+        view?.changeTitleText("Welcome to TransitionHandler example!")
         view?.changeBackgroundColor(
-            color: UIColor(
+            UIColor(
                 red: .random(in: 0.45...0.8),
                 green: .random(in: 0.45...0.8),
                 blue: .random(in: 0.45...0.8),

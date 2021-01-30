@@ -41,7 +41,7 @@ extension FirstPresenter: FirstViewOutput {
 
     func didTriggerFirstButtonTapped() {
         output?.changeTitleText()
-        router?.close(animated: true)
+        router?.close()
     }
 }
 

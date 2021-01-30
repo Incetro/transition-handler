@@ -30,7 +30,7 @@ extension SecondPresenter: SecondViewOutput {
 
     func didTriggerSecondButtonTapped() {
         output?.changeBackgroundColor()
-        router?.close(animated: true)
+        router?.close()
     }
 }
 

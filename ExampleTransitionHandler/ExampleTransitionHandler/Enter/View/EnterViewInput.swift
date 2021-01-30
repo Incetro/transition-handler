@@ -13,8 +13,8 @@ import UIKit
 protocol EnterViewInput: ViewInput {
 
     /// Change title text
-    func changeTitleText(text: String)
+    func changeTitleText(_ text: String)
 
     /// Change background color
-    func changeBackgroundColor(color: UIColor)
+    func changeBackgroundColor(_ color: UIColor)
 }

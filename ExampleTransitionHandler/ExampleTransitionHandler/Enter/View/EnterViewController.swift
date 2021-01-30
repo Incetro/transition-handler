@@ -76,7 +76,6 @@ extension EnterViewController {
             .width(180)
             .height(30)
         firstButton.addTarget(self, action: #selector(firstButtonAction), for: .touchUpInside)
-
         view.addSubview(secondButton.prepareForAutolayout())
         secondButton
             .top(to: firstButton.bottom + Constants.buttonsInset)
@@ -104,11 +103,11 @@ extension EnterViewController {
 
 extension EnterViewController: EnterViewInput {
 
-    func changeTitleText(text: String) {
+    func changeTitleText(_ text: String) {
         titleLabel.text = text
     }
 
-    func changeBackgroundColor(color: UIColor) {
+    func changeBackgroundColor(_ color: UIColor) {
         view.backgroundColor = color
     }
 }

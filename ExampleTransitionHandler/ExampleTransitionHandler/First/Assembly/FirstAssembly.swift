@@ -24,7 +24,7 @@ final class FirstModuleAssembly: CollectableAssembly {
     // MARK: - Useful
 
     func obtainViewController(withData data: FirstModule.Data) -> FirstViewController {
-        return container.resolve(FirstViewController.self, argument: data).unwrap()
+        container.resolve(FirstViewController.self, argument: data).unwrap()
     }
 
     // MARK: - Assembly

@@ -1,5 +1,5 @@
 //
-//  CatchMeAssembliesCollector.swift
+//  ExampleAssembliesCollector.swift
 //  ExampleTransitionHandler
 //
 //  Created by Alexander Lezya on 28.01.2021.
@@ -7,9 +7,9 @@
 
 import Swinject
 
-// MARK: - CatchMeAssembliesCollector
+// MARK: - ExampleAssembliesCollector
 
-final class CatchMeAssembliesCollector: AssembliesCollector {
+final class ExampleAssembliesCollector: AssembliesCollector {
 
     required init() {
     }

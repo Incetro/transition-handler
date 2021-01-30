@@ -19,7 +19,7 @@ extension EnterRouter: EnterRouterInput {
 
     func openFirstModule(moduleOutput: FirstModuleOutput) {
         transitionHandler
-            .openModule(FirstModule.self, withData: "You transition on First module!")
+            .openModule(FirstModule.self, withData: "You transitioned on First module!")
             .to(.present)
             .then{ moduleInput in
                 moduleInput.setModuleOutput(moduleOutput)

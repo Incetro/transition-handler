@@ -24,7 +24,7 @@ final class EnterModuleAssembly: CollectableAssembly {
     // MARK: - Useful
 
     func obtainViewController() -> EnterViewController {
-        return container.resolve(EnterViewController.self).unwrap()
+        container.resolve(EnterViewController.self).unwrap()
     }
 
     // MARK: - Assembly
