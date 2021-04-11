@@ -6,10 +6,10 @@
   <a href="https://cocoapods.org/pods/transition-handler">
     <img src="https://img.shields.io/cocoapods/v/transition-handler.svg?style=flat" />
   </a>
-  <a href="https://github.com/incetro/transition-handler">
+  <a href="https://github.com/Incetro/transition-handler">
     <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" />
   </a>
-  <a href="https://github.com/incetro/transition-handler#installation">
+  <a href="https://github.com/Incetro/transition-handler#installation">
     <img src="https://img.shields.io/badge/compatible-swift%205.0-orange.svg" />
   </a>
 </div>
@@ -40,9 +40,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Usage <a name="Usage"></a>
 
-To use a *TransitionHandler*, all you will need to import `TransitionHandler` module into your swift file:
+To use a `TransitionHandler`, all you will need to import `TransitionHandler` module into your swift file:
 
-```
+```swift
 import TransitionHandler
 ```
 #### For example routers implementations:
@@ -50,23 +50,25 @@ import TransitionHandler
 ```swift
 import TransitionHandler
 
-/// Open module with initiate data, setting presentation style and module output
+/// Open a module with some data, setting presentation style and module output
 func openFirstModule(moduleOutput: FirstModuleOutput) {
     transitionHandler
         .openModule(FirstModule.self, withData: "You transition on First module!")
         .to(.present)
-        .then{ moduleInput in
+        .then { moduleInput in
             moduleInput.setModuleOutput(moduleOutput)
         }
 }
 
-/// Open module with setting presentation style and module output
+/// Open a module with setting presentation style and internal module output
 func openSecondModule(moduleOutput: SecondModuleOutput) {
     transitionHandler
         .openModule(SecondModule.self)
         .to(.present)
         .then { moduleInput in
-            moduleInput.setModuleOutput(moduleOutput)
+            if let moduleOutput = self.transitionHandler.moduleOutput {
+                moduleInput.setModuleOutput(moduleOutput)
+            }
         }
 }
 ```
@@ -102,7 +104,7 @@ func openComplaints(withComment comment: CommentPlainObject) {
 
 ### Extensions: <a name="extensions"></a>
 
-*TransitionHandler* come with a couple of extensions: `Optional` and `UIViewController`.
+`TransitionHandler` come with a couple of extensions: `Optional` and `UIViewController`.
  
 These methods will help you easily handle optional objects:
 
@@ -174,7 +176,6 @@ extension Optional {
     }
 }
 ```
-
 
 And these methods allow you to make the work of various manipulations between modules even easier:
 
@@ -255,7 +256,6 @@ extension UIViewController: TransitionHandler {
 }
 
 ```
-
 
 ## Requirements
 - iOS 11.0+
