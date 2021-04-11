@@ -1,6 +1,6 @@
 ![](transition-handler.png)
 
-<center> <h1>TransitionHandler</h1> </center>
+<h1 align="center" style="margin-top: 0px;">TransitionHandler</h1>
 
 <div align = "center">
   <a href="https://cocoapods.org/pods/TransitionHandler">
