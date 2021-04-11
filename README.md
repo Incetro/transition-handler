@@ -3,8 +3,8 @@
 # TransitionHandler
 
 <div align = "center">
-  <a href="https://cocoapods.org/pods/transition-handler">
-    <img src="https://img.shields.io/cocoapods/v/transition-handler.svg?style=flat" />
+  <a href="https://cocoapods.org/pods/TransitionHandler">
+    <img src="https://img.shields.io/cocoapods/v/TransitionHandler.svg?style=flat" />
   </a>
   <a href="https://github.com/Incetro/transition-handler">
     <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" />
@@ -14,11 +14,11 @@
   </a>
 </div>
 <div align = "center">
-  <a href="https://cocoapods.org/pods/transition-handler" target="blank">
-    <img src="https://img.shields.io/cocoapods/p/transition-handler.svg?style=flat" />
+  <a href="https://cocoapods.org/pods/TransitionHandler" target="blank">
+    <img src="https://img.shields.io/cocoapods/p/TransitionHandler.svg?style=flat" />
   </a>
-  <a href="https://cocoapods.org/pods/transition-handler" target="blank">
-    <img src="https://img.shields.io/cocoapods/l/transition-handler.svg?style=flat" />
+  <a href="https://cocoapods.org/pods/TransitionHandler" target="blank">
+    <img src="https://img.shields.io/cocoapods/l/TransitionHandler.svg?style=flat" />
   </a>
   <br>
   <br>
