@@ -47,7 +47,7 @@ import TransitionHandler
 ```
 #### For example routers implementations:
 
-```
+```swift
 import TransitionHandler
 
 /// Open module with initiate data, setting presentation style and module output
@@ -72,7 +72,7 @@ func openSecondModule(moduleOutput: SecondModuleOutput) {
 ```
 #### Custom transition:
 
-```
+```swift
 import TransitionHandler
 
 /// Open complaints with initiate data, setting module output and custom transition
@@ -106,7 +106,7 @@ func openComplaints(withComment comment: CommentPlainObject) {
  
 These methods will help you easily handle optional objects:
 
-```
+```swift
 // MARK: - Optional
 
 extension Optional {
@@ -178,7 +178,7 @@ extension Optional {
 
 And these methods allow you to make the work of various manipulations between modules even easier:
 
-```
+```swift
 // MARK: - TransitionHandler
 
 extension UIViewController: TransitionHandler {
