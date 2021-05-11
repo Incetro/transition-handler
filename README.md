@@ -53,18 +53,20 @@ import TransitionHandler
 /// Open a module with some data, setting presentation style and module output
 func openFirstModule(moduleOutput: FirstModuleOutput) {
     transitionHandler
-        .openModule(FirstModule.self, withData: "You transition on First module!")
+        .openModule(FirstModule.self, withData: "You transition on the First module!")
+        .set(navigationController: navigationControllerFactory.navigationController())
         .to(.present)
-        .then { moduleInput in
-            moduleInput.setModuleOutput(moduleOutput)
+        .destination { destination in
+            destination.hidesBottomBarWhenPushed = true
         }
+        .perform()
 }
 
 /// Open a module with setting presentation style and internal module output
 func openSecondModule(moduleOutput: SecondModuleOutput) {
     transitionHandler
         .openModule(SecondModule.self)
-        .to(.present)
+        .to(.navigation(style: .push))
         .then { moduleInput in
             if let moduleOutput = self.transitionHandler.moduleOutput {
                 moduleInput.setModuleOutput(moduleOutput)
