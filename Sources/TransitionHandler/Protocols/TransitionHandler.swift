@@ -24,7 +24,7 @@ public enum ParentType {
 
 // MARK: - TransitionHandler
 
-public protocol TransitionHandler: class {
+public protocol TransitionHandler: AnyObject {
 
     /// Return current module's input
     var moduleInput: ModuleInput? { get }

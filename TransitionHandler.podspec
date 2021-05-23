@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name          = 'TransitionHandler'
   spec.module_name   = 'TransitionHandler'
-  spec.version       = '0.0.3'
+  spec.version       = '0.0.4'
   spec.license       = 'MIT'
   spec.authors       = { 'incetro' => 'incetro@ya.ru', 'Dmitry Savinov' => 'savinov.dsta@gmail.com' }
   spec.homepage      = "https://github.com/Incetro/transition-handler.git"
