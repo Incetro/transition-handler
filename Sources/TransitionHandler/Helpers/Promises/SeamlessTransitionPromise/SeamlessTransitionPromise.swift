@@ -1,5 +1,5 @@
 //
-//  ViperTransitionPromise.swift
+//  SeamlessTransitionPromise.swift
 //  TransitionHandler
 //
 //  Created by incetro on 27/11/2019.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-// MARK: - ViperTransitionPromise
+// MARK: - SeamlessTransitionPromise
 
-public final class ViperTransitionPromise<T>: TransitionPromise<T> {
+public final class SeamlessTransitionPromise: TransitionPromise {
 
     // MARK: - Properties
 
@@ -33,7 +33,7 @@ public final class ViperTransitionPromise<T>: TransitionPromise<T> {
     /// for your promise if default  presentation style isn't what do you want
     ///
     /// - Returns: Current promise
-    public func to(_ style: TransitionStyle) -> ViperTransitionPromise<T> {
+    public func to(_ style: TransitionStyle) -> SeamlessTransitionPromise {
         promise = nil
         promise { [weak self] in
             guard let destination = self?.destination else {
@@ -44,7 +44,7 @@ public final class ViperTransitionPromise<T>: TransitionPromise<T> {
             }
             switch style {
             case .navigation(style: let navStyle):
-                guard let navController = source.navigationController else {
+                guard let navController = source.navigationController ?? self?.navigationController ?? (source as? UINavigationController) else {
                     throw TransitionHandlerError.nilController("Transition error, navigation")
                 }
                 switch navStyle {
@@ -98,7 +98,7 @@ public final class ViperTransitionPromise<T>: TransitionPromise<T> {
     ///
     /// - Parameter navigationController: navigationController for destionation
     /// - Returns: P
-    public func set(navigationController: UINavigationController) -> ViperTransitionPromise<T> {
+    public func set(navigationController: UINavigationController) -> SeamlessTransitionPromise {
         self.navigationController = navigationController
         return self
     }
@@ -107,7 +107,7 @@ public final class ViperTransitionPromise<T>: TransitionPromise<T> {
     ///
     /// - Parameter transitioningDelegate: delegate for destination
     /// - Returns: Current promise
-    public func set(transitioningDelegate: UIViewControllerTransitioningDelegate) -> ViperTransitionPromise<T> {
+    public func set(transitioningDelegate: UIViewControllerTransitioningDelegate) -> SeamlessTransitionPromise {
         self.destination?.transitioningDelegate = transitioningDelegate
         return self
     }
@@ -115,9 +115,9 @@ public final class ViperTransitionPromise<T>: TransitionPromise<T> {
     /// Gives you basic template to create custom transition
     ///
     /// - Returns: Custom Promise with setups
-    public func customTransition() -> CustomTransitionPromise<T> {
+    public func customTransition() -> CustomTransitionPromise {
         let destination = self.destination.unwrap(TransitionHandlerError.nilController("Destination"))
         promise = nil
-        return CustomTransitionPromise(source: source, destination: destination, for: type)
+        return CustomTransitionPromise(source: source, destination: destination)
     }
 }

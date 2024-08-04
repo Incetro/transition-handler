@@ -12,7 +12,7 @@ public typealias TransitionBlock = (_ source: UIViewController, _ destination: U
 
 // MARK: - CustomTransitionPromise
 
-public final class CustomTransitionPromise<T> {
+public final class CustomTransitionPromise {
 
     // MARK: Properties
 
@@ -22,9 +22,6 @@ public final class CustomTransitionPromise<T> {
     /// The controller that is the target of the transition
     private var destination: UIViewController
 
-    /// Module type that is the target of the transition
-    private var type: T.Type
-
     // MARK: - Initializers
 
     /// Initilization with source and destination
@@ -33,10 +30,9 @@ public final class CustomTransitionPromise<T> {
     ///   - source: Source UIViewController
     ///   - destination: Destination UIViewController
     ///   - type: ModuleInput type
-    init(source: UIViewController, destination: UIViewController, for type: T.Type) {
+    init(source: UIViewController, destination: UIViewController) {
         self.source = source
         self.destination = destination
-        self.type = type
     }
 
     // MARK: - Useful
@@ -44,8 +40,8 @@ public final class CustomTransitionPromise<T> {
     /// Gives you basic template to create custom transition
     /// - Parameter block: closure that contains setup for transition
     /// - Returns: Promise with setups
-    public func transition(_ block: @escaping TransitionBlock) -> TransitionPromise<T> {
-        let promise = TransitionPromise(source: source, destination: destination, for: type)
+    public func transition(_ block: @escaping TransitionBlock) -> TransitionPromise {
+        let promise = TransitionPromise(source: source, destination: destination)
         promise.promise {
             block(self.source, self.destination)
         }

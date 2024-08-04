@@ -12,48 +12,15 @@ import UIKit
 
 extension UIViewController: TransitionHandler {
 
-    /// Setup module input
-    public var moduleInput: ModuleInput? {
-        if let provider = self as? ViewOutputProvider {
-            if let result = provider.viewOutput {
-                return result
-            } else {
-                fatalError("Your UIViewController must return ModuleInput!")
-            }
-        } else {
-            fatalError("Your UIViewController must implement protocol 'ViewOutputProvider'!")
-        }
-    }
-
     /// Open the desired module
-    public func openModule<M>(
-        _ moduleType: M.Type
-    ) -> ViperTransitionPromise<M.Input> where M: Module, M.View: UIViewController {
-        let destination = M.instantiate()
-        let promise = ViperTransitionPromise(
+    public func open(_ viewController: UIViewController) -> SeamlessTransitionPromise {
+        let promise = SeamlessTransitionPromise(
             source: self,
-            destination: destination,
-            for: M.Input.self
+            destination: viewController
         )
-        promise.promise { [weak self] in
-            self?.present(destination, animated: true, completion: nil)
-        }
-        return promise
-    }
-
-    /// Open the desired module with data
-    public func openModule<M>(
-        _ moduleType: M.Type,
-        withData data: M.Data
-    ) -> ViperTransitionPromise<M.Input> where M: AdvancedModule, M.View: UIViewController {
-        let destination = M.instantiate(withData: data)
-        let promise = ViperTransitionPromise(
-            source: self,
-            destination: destination,
-            for: M.Input.self
-        )
-        promise.promise { [weak self] in
-            self?.present(destination, animated: true, completion: nil)
+        promise.promise { [weak self, weak viewController] in
+            guard let self, let viewController else { return }
+            self.present(viewController, animated: true, completion: nil)
         }
         return promise
     }

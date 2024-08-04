@@ -26,12 +26,6 @@ public enum ParentType {
 
 public protocol TransitionHandler: AnyObject {
 
-    /// Return current module's input
-    var moduleInput: ModuleInput? { get }
-
-    /// Return current module's output
-    var moduleOutput: ModuleOutput? { get }
-
     /// Returns parent transition handler
     ///
     /// If `type` equals to `.prev` then this method will return `parent UIViewController`
@@ -51,24 +45,7 @@ public protocol TransitionHandler: AnyObject {
     /// - Parameters:
     ///   - moduleType: whole module type
     /// - Returns: Promise with setups
-    func openModule<M>(
-        _ moduleType: M.Type
-    ) -> ViperTransitionPromise<M.Input> where M: Module, M.View: UIViewController
-
-    /// Transition for advanced modules
-    ///
-    /// Same as method above but it will `instantiate` controller with
-    /// some kind of `data`
-    ///
-    /// - Parameters:
-    ///   - moduleType: whole module type
-    ///   - data: data for module initializations
-    /// - Returns: Promise with setups
-    func openModule<M>(
-        _ moduleType: M.Type,
-        withData data: M.Data
-    ) -> ViperTransitionPromise<M.Input> where M: AdvancedModule, M.View: UIViewController
-
+    func open(_ viewController: UIViewController) -> SeamlessTransitionPromise
 
     /// Close current module
     ///
@@ -85,13 +62,6 @@ public protocol TransitionHandler: AnyObject {
     #if !os(tvOS)
     func showShareDialog(withItem item: Any)
     #endif
-}
-
-extension TransitionHandler {
-
-    public var moduleOutput: ModuleOutput? {
-        moduleInput as? ModuleOutput
-    }
 }
 
 // MARK: - Additions

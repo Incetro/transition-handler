@@ -27,8 +27,8 @@
 		CBCF4B65256E93DC000FECE6 /* CloseTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B43256E93DC000FECE6 /* CloseTransitionPromise.swift */; };
 		CBCF4B67256E93DC000FECE6 /* TransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B45256E93DC000FECE6 /* TransitionStyle.swift */; };
 		CBCF4B69256E93DC000FECE6 /* TransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B45256E93DC000FECE6 /* TransitionStyle.swift */; };
-		CBCF4B6B256E93DC000FECE6 /* ViperTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B46256E93DC000FECE6 /* ViperTransitionPromise.swift */; };
-		CBCF4B6D256E93DC000FECE6 /* ViperTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B46256E93DC000FECE6 /* ViperTransitionPromise.swift */; };
+		CBCF4B6B256E93DC000FECE6 /* SeamlessTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B46256E93DC000FECE6 /* SeamlessTransitionPromise.swift */; };
+		CBCF4B6D256E93DC000FECE6 /* SeamlessTransitionPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B46256E93DC000FECE6 /* SeamlessTransitionPromise.swift */; };
 		CBCF4B73256E93DC000FECE6 /* TransitionHandlerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B49256E93DC000FECE6 /* TransitionHandlerError.swift */; };
 		CBCF4B75256E93DC000FECE6 /* TransitionHandlerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B49256E93DC000FECE6 /* TransitionHandlerError.swift */; };
 		CBCF4B77256E93DC000FECE6 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF4B4B256E93DC000FECE6 /* ModuleInput.swift */; };
@@ -77,7 +77,7 @@
 		CBCF4B42256E93DC000FECE6 /* CloseTransitionStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseTransitionStyle.swift; sourceTree = "<group>"; };
 		CBCF4B43256E93DC000FECE6 /* CloseTransitionPromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseTransitionPromise.swift; sourceTree = "<group>"; };
 		CBCF4B45256E93DC000FECE6 /* TransitionStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionStyle.swift; sourceTree = "<group>"; };
-		CBCF4B46256E93DC000FECE6 /* ViperTransitionPromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperTransitionPromise.swift; sourceTree = "<group>"; };
+		CBCF4B46256E93DC000FECE6 /* SeamlessTransitionPromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeamlessTransitionPromise.swift; sourceTree = "<group>"; };
 		CBCF4B49256E93DC000FECE6 /* TransitionHandlerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionHandlerError.swift; sourceTree = "<group>"; };
 		CBCF4B4B256E93DC000FECE6 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
 		CBCF4B4C256E93DC000FECE6 /* ModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleOutput.swift; sourceTree = "<group>"; };
@@ -252,7 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				CBCF4B45256E93DC000FECE6 /* TransitionStyle.swift */,
-				CBCF4B46256E93DC000FECE6 /* ViperTransitionPromise.swift */,
+				CBCF4B46256E93DC000FECE6 /* SeamlessTransitionPromise.swift */,
 			);
 			path = ViperTransitionPromise;
 			sourceTree = "<group>";
@@ -491,7 +491,7 @@
 				CBCF4B73256E93DC000FECE6 /* TransitionHandlerError.swift in Sources */,
 				CBCF4B57256E93DC000FECE6 /* CustomTransitionPromise.swift in Sources */,
 				CBCF4B9E256E949D000FECE6 /* Optional.swift in Sources */,
-				CBCF4B6B256E93DC000FECE6 /* ViperTransitionPromise.swift in Sources */,
+				CBCF4B6B256E93DC000FECE6 /* SeamlessTransitionPromise.swift in Sources */,
 				CBCF4B77256E93DC000FECE6 /* ModuleInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,7 +512,7 @@
 				CBCF4B75256E93DC000FECE6 /* TransitionHandlerError.swift in Sources */,
 				CBCF4B59256E93DC000FECE6 /* CustomTransitionPromise.swift in Sources */,
 				CBCF4BA0256E949D000FECE6 /* Optional.swift in Sources */,
-				CBCF4B6D256E93DC000FECE6 /* ViperTransitionPromise.swift in Sources */,
+				CBCF4B6D256E93DC000FECE6 /* SeamlessTransitionPromise.swift in Sources */,
 				CBCF4B79256E93DC000FECE6 /* ModuleInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
