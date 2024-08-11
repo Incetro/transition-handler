@@ -11,12 +11,12 @@ import UIKit
 // MARK: - TransitionStyle
 
 /// Auxililary enum for the `transition` style
-public enum TransitionStyle {
+public enum TransitionStyle: Equatable {
 
     // MARK: - Split
 
     /// Auxililary enum for the transitions to the split navigation controller
-    public enum Split {
+    public enum Split: Equatable {
 
         /// Detail show action to the split controller
         case detail
@@ -28,7 +28,7 @@ public enum TransitionStyle {
     // MARK: - Navigation
 
     /// Auxililary enum for the transitions to the navigation controller
-    public enum Navigation {
+    public enum Navigation: Equatable {
 
         /// Push to the current navigation controller
         case push
@@ -42,7 +42,7 @@ public enum TransitionStyle {
         // swiftlint:disable nesting
 
         /// Auxililary enum for the styles of replace action
-        public enum ReplaceStyle {
+        public enum ReplaceStyle: Equatable {
 
             /// Replace all current controllers in navigation
             case all
